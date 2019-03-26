@@ -6,7 +6,7 @@
         Work in progress
       </h1>
       <p>
-        <a href="emanuelgdev.com.br"> My personal website for while </a>
+        <a href="https://emanuelgdev.com.br"> My personal website for while </a>
       </p>
     </div>
   </section>

@@ -1,56 +1,50 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        Work in progress
-      </h1>
-      <p>
-        <a href="https://emanuelgdev.com.br"> My personal website for while </a>
-      </p>
-    </div>
-  </section>
+  <div class="site_container">
+    <main class="main_site_container">
+      <header class="header">
+        <!-- LOGO -->
+        <PersonalLogo />
+        <!-- TITLES -->
+        <hgroup>
+          <h1 class="header__title has-text-centered title has-text-light"> Emanuel Gonçalves </h1>
+          <h2 class="header__subtitle has-text-centered has-text-light"> Desenvolvedor na Decision6 </h2>
+        </hgroup>
+      </header>
+    </main>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import PersonalLogo from '../components/Logo'
 
 export default {
+  name: 'IndexPage',
   components: {
-    Logo
+    PersonalLogo
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="sass">
+@import "~assets/sass/app.sass"
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+.site_container
+  +flexCenter()
+  min-width: 100%
+  min-height: 100vh
+  position: relative
+  padding: 1em 2em
+  background-color: $gray
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .main_site_container
+    width: 60%
+    margin: 0 auto
+    padding: 2em
+    border-radius: 2px
+    box-shadow: 0 42px 48px -20px rgba(0,0,0,0.75)
+    background-color: $great
 
-.links {
-  padding-top: 15px;
-}
+  @media screen and (max-width: 768px)
+    .main_site_container
+      width: 100%
 </style>

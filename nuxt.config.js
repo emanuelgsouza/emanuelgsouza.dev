@@ -14,7 +14,17 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Nunito'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css',
+        integrity: 'sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ',
+        crossorigin: 'anonymous'
+      }
     ]
   },
 
@@ -67,5 +77,18 @@ export default {
         })
       }
     }
+  },
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: 'https://use.fontawesome.com/.*'
+      },
+      {
+        urlPattern: 'https://fonts.googleapis.com/.*'
+      },
+      {
+        urlPattern: 'https://fonts.gstatic.com/.*'
+      }
+    ]
   }
 }

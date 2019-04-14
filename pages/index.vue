@@ -6,9 +6,15 @@
         <PersonalLogo />
         <!-- TITLES -->
         <hgroup>
-          <h1 class="header__title has-text-centered title has-text-light"> Emanuel Gonçalves </h1>
-          <h2 class="header__subtitle has-text-centered has-text-light"> Desenvolvedor na Decision6 </h2>
+          <h1 class="header__title has-text-centered title has-text-light">
+            Emanuel Gonçalves
+          </h1>
+          <h2 class="header__subtitle has-text-centered subtitle has-text-light">
+            Desenvolvedor de Software
+          </h2>
         </hgroup>
+        <!-- SOCIAL ICONS -->
+        <HomeSocialIcons />
       </header>
     </main>
   </div>
@@ -16,11 +22,13 @@
 
 <script>
 import PersonalLogo from '../components/Logo'
+import HomeSocialIcons from '../modules/Home/components/SocialIcons'
 
 export default {
   name: 'IndexPage',
   components: {
-    PersonalLogo
+    PersonalLogo,
+    HomeSocialIcons
   }
 }
 </script>
@@ -29,7 +37,6 @@ export default {
 @import "~assets/sass/app.sass"
 
 .site_container
-  +flexCenter()
   min-width: 100%
   min-height: 100vh
   position: relative
@@ -43,6 +50,20 @@ export default {
     border-radius: 2px
     box-shadow: 0 42px 48px -20px rgba(0,0,0,0.75)
     background-color: $great
+
+    hgroup
+      margin: 20px 0
+
+    .header__title,
+    .header__subtitle
+      text-align: center
+      color: $green
+
+    .header__title
+      font-size: $size-3
+
+    .header__subtitle
+      font-size: $size-2
 
   @media screen and (max-width: 768px)
     .main_site_container

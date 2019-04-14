@@ -1,18 +1,22 @@
 <template>
   <div class="site_container">
-    <main class="main_site_container">
+    <div class="main_site_container">
       <HomeHeader />
-    </main>
+
+      <HomeSections />
+    </div>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
+import HomeSections from './components/Sections'
 
 export default {
   name: 'HomeLayout',
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeSections
   }
 }
 </script>

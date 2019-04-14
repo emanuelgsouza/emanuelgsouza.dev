@@ -3,20 +3,20 @@
     <div class="main_site_container">
       <HomeHeader />
 
-      <HomeSections />
+      <HomeAbout />
     </div>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
-import HomeSections from './components/Sections'
+import HomeAbout from './components/About'
 
 export default {
   name: 'HomeLayout',
   components: {
     HomeHeader,
-    HomeSections
+    HomeAbout
   }
 }
 </script>

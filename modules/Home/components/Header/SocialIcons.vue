@@ -3,13 +3,14 @@
     <div
       v-for="(icon, key) in icons"
       :key="key"
-      class="column">
-
+      class="column"
+    >
       <a
         class="app_icon"
         :href="icon.url"
         :style="{ fontSize: '3rem' }"
-        target="_blanck">
+        target="_blanck"
+      >
         <i :class="icon.name" />
       </a>
     </div>
@@ -39,7 +40,7 @@ export default {
     +flexCenter()
 
     .app_icon
-      color: $green
+      color: $secondary
       .fab
         transition: all .2s ease
 

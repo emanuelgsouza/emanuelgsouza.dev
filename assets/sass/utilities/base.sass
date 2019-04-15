@@ -1,0 +1,184 @@
+// Blocks
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin: 0
+  padding: 0
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-size: 100%
+  font-weight: normal
+
+// List
+ul
+  list-style: none
+
+// Form
+button,
+input,
+select,
+textarea
+  margin: 0
+
+// Box sizing
+html
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+  &:before,
+  &:after
+    box-sizing: inherit
+
+// Media
+img,
+embed,
+object,
+audio,
+video
+  height: auto
+  max-width: 100%
+
+// Iframe
+iframe
+  border: 0
+
+// Table
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td,
+th
+  padding: 0
+  text-align: left
+
+html
+  background-color: $base
+  min-width: 300px
+  overflow-x: hidden
+  overflow-y: scroll
+  text-rendering: optimizeLegibility
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section
+  display: block
+
+body,
+button,
+input,
+select,
+textarea
+  font-family: $family-primary
+
+code,
+pre
+  font-family: $family-code
+  line-height: 1.25
+
+body
+  color: $text-base
+  font-size: 62.5%
+  line-height: 1.428571428571429
+
+// Inline
+
+a
+  color: $link
+  cursor: pointer
+  text-decoration: none
+  cursor: pointer
+
+  &:hover
+    color: $link-hover
+    text-decoration: underline
+
+  &.button
+    text-decoration: none
+
+code
+  background-color: $code-background
+  color: $text-base
+  font-size: $size-1
+  font-weight: normal
+  padding: .2em
+
+hr
+  background-color: $primary
+  border: none
+  display: block
+  height: 1px
+  margin: 1em 0
+
+img
+  max-width: 100%
+
+input[type="checkbox"],
+input[type="radio"]
+  vertical-align: baseline
+
+small
+  font-size: $size-big-small
+
+span
+  font-style: inherit
+  font-weight: inherit
+
+strong
+  font-weight: $weight-bold
+
+// Block
+
+pre
+  background-color: $code-background
+  color: $text-base
+  white-space: pre
+  word-wrap: normal
+
+code
+  background-color: $code-background
+  color: $text-base
+  display: block
+  overflow-x: auto
+  margin: .5em 0
+  padding: 1.6em 2em
+
+table
+  width: 100%
+  td,
+  th
+    text-align: left
+    vertical-align: top
+
+p, h1, h2, h3, h4, h5, h6
+  margin: .3em 0

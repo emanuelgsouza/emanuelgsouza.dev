@@ -7,14 +7,24 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Emanuel Gonçalves - Engenheiro Front-End',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Nunito'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css',
+        integrity: 'sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ',
+        crossorigin: 'anonymous'
+      }
     ]
   },
 
@@ -39,8 +49,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
     '@nuxtjs/pwa'
   ],
 
@@ -69,5 +77,18 @@ export default {
         })
       }
     }
+  },
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: 'https://use.fontawesome.com/.*'
+      },
+      {
+        urlPattern: 'https://fonts.googleapis.com/.*'
+      },
+      {
+        urlPattern: 'https://fonts.gstatic.com/.*'
+      }
+    ]
   }
 }

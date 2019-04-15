@@ -7,7 +7,7 @@
 
       <HomeProjects />
 
-      <!-- <HomeContacts /> -->
+      <HomeContacts />
     </div>
   </div>
 </template>
@@ -16,14 +16,15 @@
 import HomeHeader from './components/Header'
 import HomeAbout from './components/About'
 import HomeProjects from './components/Projects'
-// import HomeContacts from './components/ConHomeContacts'
+import HomeContacts from './components/Contacts'
 
 export default {
   name: 'HomeLayout',
   components: {
     HomeHeader,
     HomeAbout,
-    HomeProjects
+    HomeProjects,
+    HomeContacts
   }
 }
 </script>

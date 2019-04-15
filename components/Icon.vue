@@ -2,7 +2,8 @@
   <a
     class="app_icon"
     :href="url"
-    :style="inlineStyle">
+    :style="inlineStyle"
+  >
     <i :class="name" />
   </a>
 </template>

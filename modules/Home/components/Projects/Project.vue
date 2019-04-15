@@ -97,7 +97,6 @@ export default {
   position: relative
   padding: 10px
 
-  // Effect one
   &::after,
   &::before
     content: ''

@@ -4,7 +4,8 @@
       v-for="(section, key) in sections"
       :key="key"
       :title="section.title"
-      :paragraphs="section.paragraphs" />
+      :paragraphs="section.paragraphs"
+    />
   </main>
 </template>
 

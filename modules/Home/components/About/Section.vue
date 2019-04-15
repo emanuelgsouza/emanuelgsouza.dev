@@ -1,25 +1,27 @@
 <template>
   <section>
-    <HomeSectionTitle :title="title" />
+    <AppTitle :title="title" />
 
     <div
       v-for="(paragraph, key) in paragraphs"
       :key="key"
-      class="section_text">
+      class="section_text"
+    >
       <p
         class="has-text-light"
-        v-html="paragraph" />
+        v-html="paragraph"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import HomeSectionTitle from './Title'
+import AppTitle from '~/components/Title'
 
 export default {
   name: 'AppSection',
   components: {
-    HomeSectionTitle
+    AppTitle
   },
   props: {
     title: {

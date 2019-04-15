@@ -1,5 +1,7 @@
 <template>
-  <h3 class="home_section_title"> {{ title }} </h3>
+  <h3 class="home_section_title">
+    {{ title }}
+  </h3>
 </template>
 
 <script>

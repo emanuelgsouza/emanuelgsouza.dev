@@ -4,6 +4,10 @@
       <HomeHeader />
 
       <HomeAbout />
+
+      <HomeProjects />
+
+      <!-- <HomeContacts /> -->
     </div>
   </div>
 </template>
@@ -11,12 +15,15 @@
 <script>
 import HomeHeader from './components/Header'
 import HomeAbout from './components/About'
+import HomeProjects from './components/Projects'
+// import HomeContacts from './components/ConHomeContacts'
 
 export default {
   name: 'HomeLayout',
   components: {
     HomeHeader,
-    HomeAbout
+    HomeAbout,
+    HomeProjects
   }
 }
 </script>

@@ -47,6 +47,13 @@ export default {
         url: null,
         repository: 'https://github.com/emanuelgsouza/legislative-votes-api',
         tags: ['Nodejs', 'Back-end', 'Javascript']
+      },
+      {
+        name: 'Help-Me!',
+        description: 'Uma aplicação para cadastro de problemas para os cursos de TI da Unigranrio',
+        url: 'https://help-me.surge.sh',
+        repository: 'https://github.com/emanuelgsouza/help-me',
+        tags: ['Vuejs', 'Quasar', 'Front-end', 'Javascript']
       }
     ]
   })

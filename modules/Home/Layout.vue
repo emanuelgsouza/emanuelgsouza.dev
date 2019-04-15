@@ -1,6 +1,8 @@
 <template>
   <div class="site_container">
     <div class="main_site_container">
+      <GithubConner />
+
       <HomeHeader />
 
       <HomeAbout />
@@ -17,6 +19,7 @@ import HomeHeader from './components/Header'
 import HomeAbout from './components/About'
 import HomeProjects from './components/Projects'
 import HomeContacts from './components/Contacts'
+import GithubConner from './components/GithubConner'
 
 export default {
   name: 'HomeLayout',
@@ -24,7 +27,8 @@ export default {
     HomeHeader,
     HomeAbout,
     HomeProjects,
-    HomeContacts
+    HomeContacts,
+    GithubConner
   }
 }
 </script>
@@ -40,6 +44,7 @@ export default {
   background-color: $gray
 
   .main_site_container
+    position: relative
     width: 60%
     margin: 0 auto
     padding: 2em

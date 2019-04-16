@@ -4,11 +4,11 @@
     <AppTitle title="Contatos" />
 
     <!-- PROJECTS -->
-    <div class="columns">
+    <div class="columns is-mobile">
       <div
         v-for="(contact, key) in contacts"
         :key="key"
-        class="column contacts_icon_container"
+        class="column col-2 contacts_icon_container"
       >
         <AppIcon
           :name="contact.icon"
@@ -65,7 +65,7 @@ export default {
 @import "~assets/sass/utilities/_all.sass"
 
 .contacts_icon_container
-  +flexCenter()
+  // +flexCenter()
   color: $secondary
 
   .app_icon

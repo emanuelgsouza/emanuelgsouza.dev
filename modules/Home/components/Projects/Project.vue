@@ -126,30 +126,38 @@ export default {
 
   .project_card_name
     position: relative
-    margin-bottom: 10px
 
-    &::after
-      content: ''
+    span
+      position: relative
+      margin-bottom: 10px
       display: block
-      width: 50%
-      height: 1px
-      background-color: white
+
+      &::after
+        content: ''
+        display: block
+        width: 80%
+        height: 1px
+        background-color: white
+        position: absolute
+        bottom: -6px
+        left: 0
+
+    .project_card_icons_container
       position: absolute
-      bottom: -6px
-      left: 0
+      top: 0
+      right: 0
+
+      @media screen and (max-width: $tablet)
+        position: relative
+        margin-top: 10px
+
+    .project_card_link,
+    .project_card_repository
+      color: $secondary
+
+    .project_card_icons_container > :nth-child(even)
+      margin-left: 10px
 
   .project_card_description
     margin: 10px 0
-
-  .project_card_icons_container
-    position: absolute
-    top: 0
-    right: 0
-
-  .project_card_link,
-  .project_card_repository
-    color: $secondary
-
-  .project_card_repository
-    margin-left: 10px
 </style>

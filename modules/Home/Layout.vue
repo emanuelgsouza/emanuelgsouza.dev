@@ -52,7 +52,11 @@ export default {
     box-shadow: 0 42px 48px -20px rgba(0,0,0,0.75)
     background-color: $great
 
-  @media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
+  .site_container
+    padding: 0.5em
+
     .main_site_container
       width: 100%
+      padding: 1em
 </style>

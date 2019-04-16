@@ -56,6 +56,7 @@ export default {
   .site_container
     padding: 0.5em
 
-  .main_site_container
-    width: 100% !important
+    .main_site_container
+      width: 100%
+      padding: 1em
 </style>

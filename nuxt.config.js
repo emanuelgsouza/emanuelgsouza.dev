@@ -1,4 +1,5 @@
 import pkg from './package'
+import i18nConfig from './i18n/module'
 
 export default {
   mode: 'spa',
@@ -49,7 +50,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['nuxt-i18n', i18nConfig]
   ],
 
   /*

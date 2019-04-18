@@ -10,6 +10,8 @@
       <HomeProjects />
 
       <HomeContacts />
+
+      <ChangeLanguage />
     </div>
   </div>
 </template>
@@ -20,6 +22,7 @@ import HomeAbout from './components/About'
 import HomeProjects from './components/Projects'
 import HomeContacts from './components/Contacts'
 import GithubConner from './components/GithubConner'
+import ChangeLanguage from './components/ChangeLanguage'
 
 export default {
   name: 'HomeLayout',
@@ -28,7 +31,8 @@ export default {
     HomeAbout,
     HomeProjects,
     HomeContacts,
-    GithubConner
+    GithubConner,
+    ChangeLanguage
   }
 }
 </script>

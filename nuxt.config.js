@@ -1,4 +1,5 @@
 import pkg from './package'
+import i18nConfig from './i18n/module'
 
 export default {
   mode: 'spa',
@@ -7,7 +8,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Emanuel Gonçalves - Engenheiro Front-End',
+    title: 'Emanuel Gonçalves',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -43,13 +44,15 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/flag-icons.js', ssr: false }
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['nuxt-i18n', i18nConfig]
   ],
 
   /*

@@ -8,7 +8,7 @@
         Emanuel Gonçalves
       </h1>
       <h2 class="header__subtitle has-text-centered subtitle has-text-light">
-        Engenheiro Front-End e aspirante a Engenheiro de ML
+        {{ $t('header.subtitle') }}
       </h2>
     </hgroup>
     <!-- SOCIAL ICONS -->

@@ -2,11 +2,7 @@
   <section>
     <AppTitle :title="title" />
 
-    <div
-      v-for="(paragraph, key) in paragraphs"
-      :key="key"
-      class="section_text"
-    >
+    <div class="section_text">
       <p
         class="has-text-light"
         v-html="paragraph"
@@ -28,9 +24,9 @@ export default {
       type: String,
       default: ''
     },
-    paragraphs: {
-      type: Array,
-      default: () => []
+    paragraph: {
+      type: String,
+      default: ''
     }
   }
 }

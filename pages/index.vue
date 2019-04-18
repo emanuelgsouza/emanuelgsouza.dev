@@ -9,6 +9,11 @@ export default {
   name: 'IndexPage',
   components: {
     HomeLayout
+  },
+  head() {
+    return {
+      title: this.$t('head.title')
+    }
   }
 }
 </script>

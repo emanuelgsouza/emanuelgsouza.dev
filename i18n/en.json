@@ -1,0 +1,34 @@
+{
+  "head": {
+    "title": "Emanuel Gonçalves - Front-End Engineer"
+  },
+  "header": {
+    "subtitle": "Front-End Engineer and aspirant to ML Engineer"
+  },
+  "about": {
+    "title": "About",
+    "description": "I am Emanuel Gonçalves, married and christian, web developer, enthusiast of Web Technologies and <a class='home_section_text_link' href='https://paulovasconcellos.com.br/o-que-%C3%A9-intelig%C3%AAncia-artificial-e-porqu%C3%AA-voc%C3%AA-deve-matar-esse-hype-63d1ac28cd0e'>Artificial Intelligence</a>. As an aspiring Engineer at Machine Lerning, I've been looking to devote more time to studies in the area of Artificial Intelligence, with a focus on Machine Learning.. I work as a Web Analyst at <a class='home_section_text_link' href='https://decision6.com/' title='Go to the company website where I work, Decision6'> Decision6 - Store Flow </a>. I try to develop problem solving in my projects, because I believe the technologies are to solve problems that we humans might take a long time to solve, or they would not solve. I like to participate in the open source community, always looking to be contributing to it. My motto is an African saying that says 'Go fast, go alone; go far, go together'."
+  },
+  "projects": {
+    "title": "Projects",
+    "project1": {
+      "description": "A website to learn about acessibitity. Aimed at the devs world, you'll find countless tips on how to make your site accessible",
+      "tags": ["Acessibilidade", "Front-End"]
+    },
+    "project2": {
+      "description": "Do you know the concept of 'puxadinho'? So, this project aims to bring quickly, the information that Deputies were 'pulled' and which were elected by their own votes. Still in Front End Development",
+      "tags": ["React", "Front-End"]
+    },
+    "project3": {
+      "description": "API for web site data 'Como meu deputado foi eleito?'",
+      "tags": ["Nodejs", "Back-end", "Javascript"]
+    },
+    "project4": {
+      "description": "An application to register of problems to IT curses in Unigranrio University",
+      "tags": ["Vuejs", "Quasar", "Front-end", "Javascript"]
+    }
+  },
+  "contacts": {
+    "title": "Contacts"
+  }
+}

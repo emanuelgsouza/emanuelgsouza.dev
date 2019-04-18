@@ -8,7 +8,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Emanuel Gonçalves - Engenheiro Front-End',
+    title: 'Emanuel Gonçalves',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -44,6 +44,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/flag-icons.js', ssr: false }
   ],
 
   /*

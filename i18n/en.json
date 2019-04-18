@@ -1,10 +1,13 @@
 {
+  "head": {
+    "title": "Emanuel Gonçalves - Front-End Engineer"
+  },
   "header": {
     "subtitle": "Front-End Engineer and aspirant to ML Engineer"
   },
   "about": {
     "title": "About",
-    "description": "I am Emanuel Gonçalves, married and christian, web developer, enthusiast of Web Technologies and <a class='home_section_text_link' href='https://paulovasconcellos.com.br/o-que-%C3%A9-intelig%C3%AAncia-artificial-e-porqu%C3%AA-voc%C3%AA-deve-matar-esse-hype-63d1ac28cd0e'>Artificial Intelligence</a>. As the title says, I became an aspiring Engineer at Machine Lerning, so I've been looking to devote more time to studies in the area of Artificial Intelligence, with a focus on Machine Learning.. I work as a Web Analyst at <a href='https://decision6.com/' title='Go to the company website where I work, Decision6'> Decision6 - Store Flow </a>. I try to develop problem solving in my projects, because I believe the technologies are to solve problems that we humans might take a long time to solve, or they would not solve. I like to participate in the open source community, always looking to be contributing to it. My motto is an African saying that says 'Go fast, go alone; go far, go together'."
+    "description": "I am Emanuel Gonçalves, married and christian, web developer, enthusiast of Web Technologies and <a class='home_section_text_link' href='https://paulovasconcellos.com.br/o-que-%C3%A9-intelig%C3%AAncia-artificial-e-porqu%C3%AA-voc%C3%AA-deve-matar-esse-hype-63d1ac28cd0e'>Artificial Intelligence</a>. As the title says, I became an aspiring Engineer at Machine Lerning, so I've been looking to devote more time to studies in the area of Artificial Intelligence, with a focus on Machine Learning.. I work as a Web Analyst at <a class='home_section_text_link' href='https://decision6.com/' title='Go to the company website where I work, Decision6'> Decision6 - Store Flow </a>. I try to develop problem solving in my projects, because I believe the technologies are to solve problems that we humans might take a long time to solve, or they would not solve. I like to participate in the open source community, always looking to be contributing to it. My motto is an African saying that says 'Go fast, go alone; go far, go together'."
   },
   "projects": {
     "project1": {

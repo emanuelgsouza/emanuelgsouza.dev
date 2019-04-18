@@ -1,7 +1,7 @@
 <template>
   <div class="home_projects_section">
     <!-- TITLE -->
-    <AppTitle title="Projetos" />
+    <AppTitle :title="$t('projects.title')" />
 
     <!-- PROJECTS -->
     <div>

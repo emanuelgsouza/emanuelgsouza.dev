@@ -1,7 +1,7 @@
 <template>
   <div class="home_contacts_section">
     <!-- TITLE -->
-    <AppTitle title="Contatos" />
+    <AppTitle :title="$t('contacts.title')" />
 
     <!-- PROJECTS -->
     <div class="columns is-mobile">

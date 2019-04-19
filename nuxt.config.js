@@ -52,7 +52,11 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
-    ['nuxt-i18n', i18nConfig]
+    ['nuxt-i18n', i18nConfig],
+    ['@nuxtjs/google-analytics', {
+      id: process.env.GA,
+      dev: false
+    }]
   ],
 
   /*

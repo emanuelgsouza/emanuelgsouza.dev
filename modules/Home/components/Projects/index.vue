@@ -48,6 +48,13 @@ export default {
           url: 'https://help-me.surge.sh',
           repository: 'https://github.com/emanuelgsouza/help-me',
           tags: this.$t('projects.project3.tags')
+        },
+        {
+          name: this.$t('projects.project4.name'),
+          description: this.$t('projects.project4.description'),
+          url: null,
+          repository: 'https://github.com/emanuelgsouza/eleicoes-2016',
+          tags: this.$t('projects.project4.tags')
         }
       ]
     }

@@ -6,7 +6,7 @@
     "subtitle": "Front-End Engineer"
   },
   "about": {
-    "title": "About",
+    "title": "About me",
     "description": "Pleasure, I am Emanuel Gonçalves, married and Christian, Front End Enginner, enthusiast of Web Technologies, Accessibility and Semantic Web. I work as Software Developer in Decision6 - Store Flow. I have as hobbie the study in the area of Artificial Intelligence, especially Machine Learning. I recognize the role of Open Source and development communities and, whenever possible, participate in them, especially in the Telegram. I have as motto an African saying that says' To go fast, go alone; to go far, go together'"
   },
   "projects": {
@@ -25,6 +25,11 @@
       "name": "Help-Me!",
       "description": "I had the opportunity to put my knowledge into practice using Firebase, more precisely the Firestore, as well as the Quasar Framework, in this project. It is a system for registering problems that potentially will be appreciated by the IT Coordination of Unigranrio University, being possible to turn TCC or PCA (Curricular Articulator Project)",
       "tags": ["Vuejs", "Quasar", "Front-end", "Javascript", "Firebase"]
+    },
+    "project4": {
+      "name": "Elections for Duque de Caxias City - 2016",
+      "description": "One of the University's work was the opportunity to develop a Data Exploration Analysis project in the elections for Mayor of Duque de Caxias. It was some cool discoveries. It is worth checking.",
+      "tags": ["Exploratory Data Analysis", "Python"]
     }
   },
   "contacts": {

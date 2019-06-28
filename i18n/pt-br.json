@@ -6,7 +6,7 @@
     "subtitle": "Engenheiro Front-End"
   },
   "about": {
-    "title": "Sobre",
+    "title": "Um pouco de mim",
     "description": "Prazer, sou Emanuel Gonçalves, casado e cristão, Engenheiro Front End, entusiasta de Tecnologias Web, Acessibilidade e Web Semântica. Trabalho como Desenvolvedor de Software na Decision6 - Store Flow. Possuo como hobbie o estudo na área de Inteligência Artificial, sobretudo Aprendizado de Máquina. Reconheço o papel do Open Source e das comunidades de desenvolvimento e sempre que possível participo delas, sobretudo no Telegram. Tenho como lema um ditado africano que diz 'To go fast, go alone; to go far, go together'."
   },
   "projects": {
@@ -25,6 +25,11 @@
       "name": "Help-Me!",
       "description": "Tive a oportunidade de colocar em prática meus conhecimentos usando o Firebase, mais precisamente o Firestore, bem como o Framework Quasar, neste projeto. É um sistema para cadastro de problemas que potencialmente serão apreciados pela Coordenação de TI da Universidade Unigranrio, sendo possível virar TCC ou PCA (Projeto Curricular Articulador)",
       "tags": ["Vuejs", "Quasar", "Front-end", "Javascript", "Firebase"]
+    },
+    "project4": {
+      "name": "Eleições para Prefeitura de Duque de Caxias - 2016",
+      "description": "Um dos trabalhos da Faculdade, foi a oportunidade de desenvolver um projeto de Análise de Exploratória de Dados nas eleições para Prefeito de Duque de Caxias. Foram algumas descobertas bacanas. Vale a pena conferir.",
+      "tags": ["Análise de Dados Exploratória", "Python"]
     }
   },
   "contacts": {

@@ -24,7 +24,7 @@ export default {
     icons: [
       { name: 'fab fa-github', url: 'https://github.com/emanuelgsouza' },
       { name: 'fab fa-linkedin-in', url: 'https://linkedin.com/in/emanuelgsouza' },
-      { name: 'fab fa-kaggle', url: 'https://kaggle.com/emanuelgsouza' }
+      { name: 'fab fa-medium', url: 'https://www.medium.com/@emanuelgsouza' }
     ]
   })
 }

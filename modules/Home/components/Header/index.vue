@@ -5,11 +5,11 @@
     <!-- TITLES -->
     <hgroup>
       <h1 class="header__title has-text-centered title has-text-light">
-        Emanuel Gonçalves
+        Emanuel Gonçalves - {{ $t('header.subtitle') }}
       </h1>
-      <h2 class="header__subtitle has-text-centered subtitle has-text-light">
+      <!-- <h2 class="header__subtitle has-text-centered subtitle has-text-light">
         {{ $t('header.subtitle') }}
-      </h2>
+      </h2> -->
     </hgroup>
     <!-- SOCIAL ICONS -->
     <HomeSocialIcons />

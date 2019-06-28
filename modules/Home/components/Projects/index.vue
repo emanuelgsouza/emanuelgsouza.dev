@@ -29,32 +29,25 @@ export default {
     return {
       projects: [
         {
-          name: 'Guia de Acessibilidade na web',
+          name: this.$t('projects.project1.name'),
           description: this.$t('projects.project1.description'),
           url: 'https://acessibilidade-for-devs.github.io/',
           repository: 'https://github.com/acessibilidade-for-devs/acessibilidade-for-devs.github.io',
           tags: this.$t('projects.project1.tags')
         },
         {
-          name: 'Como meu deputado foi eleito?',
+          name: this.$t('projects.project2.name'),
           description: this.$t('projects.project2.description'),
           url: null,
-          repository: 'https://github.com/Guilherme2020/legislative-votes-web',
+          repository: 'https://github.com/legislative-votes-br',
           tags: this.$t('projects.project2.tags')
         },
         {
-          name: '[API] Como meu deputado foi eleito?',
+          name: this.$t('projects.project3.name'),
           description: this.$t('projects.project3.description'),
-          url: null,
-          repository: 'https://github.com/emanuelgsouza/legislative-votes-api',
-          tags: this.$t('projects.project3.tags')
-        },
-        {
-          name: 'Help-Me!',
-          description: this.$t('projects.project4.description'),
           url: 'https://help-me.surge.sh',
           repository: 'https://github.com/emanuelgsouza/help-me',
-          tags: this.$t('projects.project4.tags')
+          tags: this.$t('projects.project3.tags')
         }
       ]
     }

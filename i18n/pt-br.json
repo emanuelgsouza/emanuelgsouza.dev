@@ -30,6 +30,11 @@
       "name": "Eleições para Prefeitura de Duque de Caxias - 2016",
       "description": "Um dos trabalhos da Faculdade, foi a oportunidade de desenvolver um projeto de Análise de Exploratória de Dados nas eleições para Prefeito de Duque de Caxias. Foram algumas descobertas bacanas. Vale a pena conferir.",
       "tags": ["Análise de Dados Exploratória", "Python"]
+    },
+    "project5": {
+      "name": "ERSI - 2019",
+      "description": "Tive a oportunidade de estar participando do desenvolvimento do site para a Escola Regional de Sistemas de Informação, edição 2019, que será sediado na Universidade Unigranrio, polo Caxias - RJ",
+      "tags": ["Site Institucional"]
     }
   },
   "contacts": {

@@ -55,6 +55,13 @@ export default {
           url: null,
           repository: 'https://github.com/emanuelgsouza/eleicoes-2016',
           tags: this.$t('projects.project4.tags')
+        },
+        {
+          name: this.$t('projects.project5.name'),
+          description: this.$t('projects.project5.description'),
+          url: 'http://www.unigranrio.com.br/ersi2019/',
+          repository: null,
+          tags: this.$t('projects.project5.tags')
         }
       ]
     }

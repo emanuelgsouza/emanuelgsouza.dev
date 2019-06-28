@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import AppTitle from '~/components/Title'
 import Project from './Project'
+import AppTitle from '~/components/Title'
 
 export default {
   name: 'HomeProjects',

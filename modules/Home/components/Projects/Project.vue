@@ -47,8 +47,8 @@
 </template>
 
 <script>
-import AppIcon from '~/components/Icon'
 import { get, isNil, isEmpty } from 'lodash'
+import AppIcon from '~/components/Icon'
 
 export default {
   name: 'Project',

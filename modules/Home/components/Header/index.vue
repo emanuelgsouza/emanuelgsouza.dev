@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import PersonalLogo from '~/components/Logo'
 import HomeSocialIcons from './SocialIcons'
+import PersonalLogo from '~/components/Logo'
 
 export default {
   name: 'HomeHeader',

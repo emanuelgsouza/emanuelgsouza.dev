@@ -3,6 +3,7 @@
     class="app_icon"
     :href="url"
     :style="inlineStyle"
+    target="blanck"
   >
     <i :class="name" />
   </a>

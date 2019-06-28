@@ -44,7 +44,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/flag-icons.js', ssr: false }
+    { src: '~plugins/flag-icons.js', ssr: false },
+    { src: '~plugins/console.js', ssr: false }
   ],
 
   /*

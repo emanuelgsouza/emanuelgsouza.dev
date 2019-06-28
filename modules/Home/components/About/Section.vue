@@ -3,10 +3,9 @@
     <AppTitle :title="title" />
 
     <div class="section_text">
-      <p
-        class="has-text-light"
-        v-html="paragraph"
-      />
+      <p class="has-text-light">
+        {{ paragraph }}
+      </p>
     </div>
   </section>
 </template>

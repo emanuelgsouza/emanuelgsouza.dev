@@ -129,18 +129,18 @@ export default {
 
     span
       position: relative
-      margin-bottom: 10px
+      // margin-bottom: 10px
       display: block
 
-      &::after
-        content: ''
-        display: block
-        width: 80%
-        height: 1px
-        background-color: white
-        position: absolute
-        bottom: -6px
-        left: 0
+      // &::after
+      //   content: ''
+      //   display: block
+      //   width: 80%
+      //   height: 1px
+      //   background-color: white
+      //   position: absolute
+      //   bottom: -6px
+      //   left: 0
 
     .project_card_icons_container
       position: absolute
@@ -160,4 +160,8 @@ export default {
 
   .project_card_description
     margin: 10px 0
+
+  .project_card_tags .tag
+    background-color: $secondary
+    color: $primary
 </style>

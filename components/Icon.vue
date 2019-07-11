@@ -27,7 +27,7 @@ export default {
     }
   },
   computed: {
-    inlineStyle() {
+    inlineStyle () {
       if (this.size) {
         return {
           fontSize: this.size

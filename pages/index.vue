@@ -10,7 +10,7 @@ export default {
   components: {
     HomeLayout
   },
-  head() {
+  head () {
     return {
       title: this.$t('head.title')
     }

@@ -7,16 +7,16 @@ const iconsLanguages = {
 export default {
   name: 'ChangeLanguage',
   computed: {
-    showLocales() {
+    showLocales () {
       return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)
     },
-    isHomeRoute() {
+    isHomeRoute () {
       return this.$route.path === '/'
     }
   },
   methods: {
-    changeLanguage() {},
-    getIconClass(locale) {
+    changeLanguage () {},
+    getIconClass (locale) {
       return `flag-icon flag-icon-${iconsLanguages[locale]}`
     }
   }

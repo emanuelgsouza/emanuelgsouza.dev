@@ -25,7 +25,7 @@ export default {
     AppTitle,
     Project
   },
-  data() {
+  data () {
     return {
       projects: [
         {

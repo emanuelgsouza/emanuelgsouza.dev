@@ -60,28 +60,28 @@ export default {
     }
   },
   computed: {
-    name() {
+    name () {
       return get(this.project, 'name', '') || ''
     },
-    description() {
+    description () {
       return get(this.project, 'description', '') || ''
     },
-    url() {
+    url () {
       return get(this.project, 'url', null)
     },
-    hasUrl() {
+    hasUrl () {
       return !isNil(this.url)
     },
-    repository() {
+    repository () {
       return get(this.project, 'repository', null)
     },
-    hasRepository() {
+    hasRepository () {
       return !isNil(this.repository)
     },
-    tags() {
+    tags () {
       return get(this.project, 'tags', []) || []
     },
-    hasTags() {
+    hasTags () {
       return !isEmpty(this.tags)
     }
   }

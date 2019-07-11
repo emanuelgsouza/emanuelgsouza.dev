@@ -2,7 +2,7 @@ import pkg from './package'
 import i18nConfig from './i18n/module'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page

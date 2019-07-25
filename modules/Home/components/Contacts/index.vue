@@ -11,8 +11,7 @@
         class="column col-2 contacts_icon_container"
       >
         <AppIcon
-          :name="contact.icon"
-          :url="contact.url"
+          v-bind="contact"
           size="2rem"
         />
       </div>
@@ -21,6 +20,7 @@
 </template>
 
 <script>
+import { CONTACT_ICONS } from '../../constants'
 import AppTitle from '~/components/Title'
 import AppIcon from '~/components/Icon'
 
@@ -31,32 +31,7 @@ export default {
     AppIcon
   },
   data: () => ({
-    contacts: [
-      {
-        icon: 'fab fa-linkedin-in',
-        url: 'https://www.linkedin.com/in/emanuelgsouza/'
-      },
-      {
-        icon: 'fab fa-medium',
-        url: 'https://www.medium.com/@emanuelgsouza'
-      },
-      {
-        icon: 'fab fa-github-alt',
-        url: 'https://www.github.com/emanuelgsouza'
-      },
-      {
-        icon: 'fab fa-telegram',
-        url: 'https://telegram.me/emanuelgsouza'
-      },
-      {
-        icon: 'fab fa-twitter',
-        url: 'https://www.twitter.com/emanuelgsouza'
-      },
-      {
-        icon: 'fas fa-envelope',
-        url: 'mailto:emanuelgdesouza@gmail.com'
-      }
-    ]
+    contacts: Object.values(CONTACT_ICONS)
   })
 }
 </script>

@@ -3,7 +3,8 @@
     "jump_to_content": {
       "title": "Jump to main content in this page",
       "link": "Jump to main content"
-    }
+    },
+    "change_language_title": "Change language to Portuguese"
   },
   "head": {
     "title": "Emanuel Gonçalves - Front-End Engineer"
@@ -17,6 +18,8 @@
   },
   "projects": {
     "title": "Projects",
+    "go_to_github": "Meet the {name} project on Github",
+    "go_to_website": "Meet the {name} website",
     "project1": {
       "name": "Acessibility for devs",
       "description": "A website to learn about acessibitity. Aimed at the devs world, you'll find countless tips on how to make your site accessible. The site is constantly growing, and as an Open Source project, it is always open to improvements and reviews",
@@ -44,6 +47,14 @@
     }
   },
   "contacts": {
-    "title": "Contacts"
+    "title": "Contacts",
+    "links": {
+      "github": "Meet my projects on Github",
+      "linkedin": "Meet my personal profile on Linkedin",
+      "medium": "Meet my production content on Medium",
+      "telegram": "Let's to talk on Telegram",
+      "twitter": "Meet my profile on Twitter",
+      "email": "If you like, send a e-mail to emanuelgdesouza@gmail.com"
+    }
   }
 }

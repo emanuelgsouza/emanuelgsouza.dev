@@ -9,6 +9,7 @@
         class="app_icon"
         :href="icon.url"
         :style="{ fontSize: '3rem' }"
+        :title="$t(icon.title)"
         target="_blanck"
       >
         <i :class="icon.name" />
@@ -18,13 +19,15 @@
 </template>
 
 <script>
+import { CONTACT_ICONS } from '../../constants'
+
 export default {
   name: 'HomeSocialIcons',
   data: () => ({
     icons: [
-      { name: 'fab fa-github', url: 'https://github.com/emanuelgsouza' },
-      { name: 'fab fa-linkedin-in', url: 'https://linkedin.com/in/emanuelgsouza' },
-      { name: 'fab fa-medium', url: 'https://www.medium.com/@emanuelgsouza' }
+      CONTACT_ICONS.GITHUB,
+      CONTACT_ICONS.LINKEDIN,
+      CONTACT_ICONS.MEDIUM
     ]
   })
 }

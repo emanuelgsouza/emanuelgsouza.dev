@@ -10,6 +10,8 @@
           v-if="hasUrl"
           name="fas fa-external-link-square-alt"
           :url="url"
+          :title="'projects.go_to_website'"
+          :title-extra-properties="{ name }"
           size="1.4rem"
           class="project_card_link"
         />
@@ -19,6 +21,8 @@
           v-if="hasRepository"
           name="fab fa-github"
           :url="repository"
+          :title="'projects.go_to_github'"
+          :title-extra-properties="{ name }"
           size="1.4rem"
           class="project_card_repository"
         />

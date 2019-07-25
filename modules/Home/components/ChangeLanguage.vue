@@ -15,7 +15,6 @@ export default {
     }
   },
   methods: {
-    changeLanguage () {},
     getIconClass (locale) {
       return `flag-icon flag-icon-${iconsLanguages[locale]}`
     }
@@ -30,6 +29,7 @@ export default {
       :key="i"
       :class="getIconClass(locale.code)"
       :to="switchLocalePath(locale.code)"
+      :title="$t('terms.change_language_title')"
     />
   </div>
 </template>

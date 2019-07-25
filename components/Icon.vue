@@ -3,6 +3,7 @@
     class="app_icon"
     :href="url"
     :style="inlineStyle"
+    :title="$t(title, titleExtraProperties)"
     target="blanck"
   >
     <i :class="name" />
@@ -24,6 +25,14 @@ export default {
     size: {
       type: String,
       default: ''
+    },
+    title: {
+      type: String,
+      default: ''
+    },
+    titleExtraProperties: {
+      type: Object,
+      default: () => ({})
     }
   },
   computed: {

@@ -45,15 +45,13 @@ export default {
   min-height: 100vh
   position: relative
   padding: 1em 2em
-  background-color: $gray
+  background-color: $great
 
   .main_site_container
-    position: relative
-    width: 60%
+    max-width: 1200px
     margin: 0 auto
     padding: 2em
     border-radius: 2px
-    box-shadow: 0 42px 48px -20px rgba(0,0,0,0.75)
     background-color: $great
 
 @media screen and (max-width: 768px)

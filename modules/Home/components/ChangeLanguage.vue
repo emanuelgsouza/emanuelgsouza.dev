@@ -40,10 +40,11 @@ export default {
 .change-language
   position: absolute
   top: 0px
-  left: 5px
+  left: 0px
   z-index: 2
   font-size: $size-3
 
   .nuxt-link-active, a
+    display: block
     text-decoration: none
 </style>

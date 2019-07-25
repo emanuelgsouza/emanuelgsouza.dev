@@ -143,13 +143,8 @@ export default {
       //   left: 0
 
     .project_card_icons_container
-      position: absolute
-      top: 0
-      right: 0
-
-      @media screen and (max-width: $tablet)
-        position: relative
-        margin-top: 10px
+      position: relative
+      margin-top: 10px
 
     .project_card_link,
     .project_card_repository

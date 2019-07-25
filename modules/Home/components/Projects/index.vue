@@ -4,10 +4,11 @@
     <AppTitle :title="$t('projects.title')" />
 
     <!-- PROJECTS -->
-    <div>
+    <div class="columns is-multiline">
       <div
         v-for="(project, key) in projects"
         :key="key"
+        class="column is-4"
       >
         <Project :project="project" />
       </div>

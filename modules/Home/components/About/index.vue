@@ -1,5 +1,5 @@
 <template>
-  <main class="home_main_container">
+  <main id="main" class="home_main_container">
     <HomeSection
       :title="$t('about.title')"
       :paragraph="$t('about.description')"

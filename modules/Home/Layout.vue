@@ -1,5 +1,10 @@
 <template>
   <div class="site_container">
+    <JumpToContent
+      content-id="#main"
+      :title="$t('terms.jump_to_content.title')"
+      :text="$t('terms.jump_to_content.link')"
+    />
     <div class="main_site_container">
       <GithubConner />
 
@@ -17,6 +22,7 @@
 </template>
 
 <script>
+import JumpToContent from '../../components/JumpToContent'
 import HomeHeader from './components/Header'
 import HomeAbout from './components/About'
 import HomeProjects from './components/Projects'
@@ -27,6 +33,7 @@ import ChangeLanguage from './components/ChangeLanguage'
 export default {
   name: 'HomeLayout',
   components: {
+    JumpToContent,
     HomeHeader,
     HomeAbout,
     HomeProjects,

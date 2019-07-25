@@ -1,4 +1,10 @@
 {
+  "terms": {
+    "jump_to_content": {
+      "title": "Jump to main content in this page",
+      "link": "Jump to main content"
+    }
+  },
   "head": {
     "title": "Emanuel Gonçalves - Front-End Engineer"
   },

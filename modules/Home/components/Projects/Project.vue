@@ -96,63 +96,25 @@ export default {
 @import "~assets/sass/utilities/_all.sass"
 
 .project_card
-  color: white
-  margin: 30px 0
   position: relative
   padding: 10px
-
-  &::after,
-  &::before
-    content: ''
-    display: block
-    position: absolute
-    width: 100px
-    height: 50px
-    border: 2px solid
-    transition: all 0.6s ease
-    border-radius: 2px
-
-  &::after
-    bottom: -5px
-    left: -5px
-    border-top-color: transparent
-    border-left-color: $secondary
-    border-bottom-color: $secondary
-    border-right-color: transparent
-
-  &::before
-    top: -5px
-    right: -5px
-    border-bottom-color: transparent
-    border-right-color: $secondary
-    border-top-color: $secondary
-    border-left-color: transparent
+  background-color: #fefefe
+  border-radius: 4px
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12) // based on Material Card
 
   .project_card_name
-    position: relative
-
     span
       position: relative
-      // margin-bottom: 10px
       display: block
 
-      // &::after
-      //   content: ''
-      //   display: block
-      //   width: 80%
-      //   height: 1px
-      //   background-color: white
-      //   position: absolute
-      //   bottom: -6px
-      //   left: 0
-
     .project_card_icons_container
-      position: relative
-      margin-top: 10px
+      position: absolute
+      top: 5px
+      right: 10px
 
     .project_card_link,
     .project_card_repository
-      color: $secondary
+      color: $primary
 
     .project_card_icons_container > :nth-child(even)
       margin-left: 10px

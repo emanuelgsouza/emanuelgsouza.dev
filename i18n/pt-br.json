@@ -17,32 +17,32 @@
     "description": "Prazer, sou Emanuel Gonçalves, casado e cristão, Engenheiro Front End, entusiasta de Tecnologias Web, Acessibilidade e Web Semântica. Trabalho como Desenvolvedor de Software na Decision6 - Store Flow. Possuo como hobbie o estudo na área de Inteligência Artificial, sobretudo Aprendizado de Máquina. Reconheço o papel do Open Source e das comunidades de desenvolvimento e sempre que possível participo delas, sobretudo no Telegram. Tenho como lema um ditado africano que diz 'To go fast, go alone; to go far, go together'."
   },
   "projects": {
-    "title": "Projetos",
+    "title": "Projetos Principais",
     "go_to_github": "Conheça o projeto {name} no Github",
     "go_to_website": "Conheça site do projeto {name}",
     "project1": {
       "name": "Acessibilidade for devs",
-      "description": "Um site para quem quer aprender sobre acessibilidade. Voltado para o mundo dos devs, você encontra lá inúmeras dicas de como tornar seu site acessível. O site está em constante crescimento, e como um projeto Open Source, está sempre aberto a melhorias e críticas",
+      "description": "Um site para quem quer aprender sobre acessibilidade. Voltado para o mundo dos devs, você encontra lá inúmeras dicas de como tornar seu site acessível. Aborda-se desde boas práticas a referências a documentação oficial da W3C. O site está em constante crescimento, e como um projeto Open Source, está sempre aberto a melhorias e críticas.",
       "tags": ["Acessibilidade", "Front-End"]
     },
     "project2": {
       "name": "Como meu deputado foi eleito?",
-      "description": "Você conhece o conceito de puxadinho? Este projeto visa a trazer de maneira rápida a informação de quais Deputados foram 'puxados' e quais foram eleitos pelos seus próprios votos. É uma oportunidade de aprimorar os conhecimentos na linguagem Python, bem como na biblioteca React",
+      "description": "Você conhece o conceito de puxadinho? Este projeto visa trazer de maneira rápida a informação de quais Deputados foram 'puxados' e quais foram eleitos pelos seus próprios votos. O objetivo é o usuário poder buscar seus deputados ou ter um apanhado geral de como foram as eleições no Brasil, em 2018",
       "tags": ["React", "Front-End", "Python", "Nodejs"]
     },
     "project3": {
       "name": "Help-Me!",
-      "description": "Tive a oportunidade de colocar em prática meus conhecimentos usando o Firebase, mais precisamente o Firestore, bem como o Framework Quasar, neste projeto. É um sistema para cadastro de problemas que potencialmente serão apreciados pela Coordenação de TI da Universidade Unigranrio, sendo possível virar TCC ou PCA (Projeto Curricular Articulador)",
-      "tags": ["Vuejs", "Quasar", "Front-end", "Javascript", "Firebase"]
+      "description": "Tive a oportunidade de colocar em prática meus conhecimentos usando o Firebase, bem como o Framework Quasar, neste projeto. É um sistema para cadastro de problemas que potencialmente serão apreciados pela Coordenação de TI da Universidade Unigranrio, sendo possível virar TCC ou PCA (Projeto Curricular Articulador)",
+      "tags": ["Vuejs", "Quasar", "Front-end", "Firebase"]
     },
     "project4": {
-      "name": "Eleições para Prefeitura de Duque de Caxias - 2016",
-      "description": "Um dos trabalhos da Faculdade, foi a oportunidade de desenvolver um projeto de Análise de Exploratória de Dados nas eleições para Prefeito de Duque de Caxias. Foram algumas descobertas bacanas. Vale a pena conferir.",
+      "name": "Análise de Dados das Eleições em 2016",
+      "description": "Foi a oportunidade de desenvolver um projeto de Análise de Exploratória de Dados nas eleições para Prefeito de Duque de Caxias. Foram algumas descobertas bacanas. Foi o primeiro projeto usando conhecimentos de estatística, bem como da análise exploratória dos dados. Uma oportunidade para se trabalhar com a linguagem Python.",
       "tags": ["Análise de Dados Exploratória", "Python"]
     },
     "project5": {
       "name": "ERSI - 2019",
-      "description": "Tive a oportunidade de estar participando do desenvolvimento do site para a Escola Regional de Sistemas de Informação, edição 2019, que será sediado na Universidade Unigranrio, polo Caxias - RJ",
+      "description": "Uma oportunidade de trabalhar em grupo para o desenvolvimento do site para a Escola Regional de Sistemas de Informação, um evento da Sociedade Brasileira de Computação, edição 2019, que será sediado na Universidade Unigranrio, polo Caxias - RJ",
       "tags": ["Site Institucional"]
     }
   },

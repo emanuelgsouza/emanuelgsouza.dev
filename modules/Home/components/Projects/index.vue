@@ -63,6 +63,13 @@ export default {
           url: 'http://www.unigranrio.com.br/ersi2019/',
           repository: null,
           tags: this.$t('projects.project5.tags')
+        },
+        {
+          name: this.$t('projects.project6.name'),
+          description: this.$t('projects.project6.description'),
+          url: 'https://emilenagoncalves.com.br/',
+          repository: null,
+          tags: this.$t('projects.project6.tags')
         }
       ]
     }

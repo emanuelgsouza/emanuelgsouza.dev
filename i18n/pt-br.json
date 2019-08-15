@@ -44,6 +44,11 @@
       "name": "ERSI - 2019",
       "description": "Uma oportunidade de trabalhar em grupo para o desenvolvimento do site para a Escola Regional de Sistemas de Informação, um evento da Sociedade Brasileira de Computação, edição 2019, que será sediado na Universidade Unigranrio, polo Caxias - RJ",
       "tags": ["Site Institucional"]
+    },
+    "project6": {
+      "name": "Emilena Gonçalves - Página profissional",
+      "description": "Minha primeira oportunidade de usar React e Next, e usei a biblioteca Talwind também. Desenvolvi a parte de design e código. Mais uma oportunidade de trabalhar com ambos num mesmo projeto",
+      "tags": ["Página profissional", "Next", "React", "Tailwind"]
     }
   },
   "contacts": {

@@ -51,7 +51,7 @@
 
       <a
         v-if="hasRepository"
-        class="button is-outlined"
+        class="button"
         :href="repository"
         :title="$t('projects.go_to_github', { name })"
         target="blank"
@@ -157,7 +157,9 @@ export default {
     margin: 0.5rem 0 0.5rem 0
 
   .button
-    background-color: $secondary
+    background-color: $primary
+    color: white
+    border: none
 
   .project_card_tags.tags
     margin-top: 0.5rem

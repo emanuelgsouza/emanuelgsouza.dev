@@ -57,7 +57,7 @@
         target="blank"
       >
         <span class="icon is-small">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-github" />
         </span>
         <span>Github</span>
       </a>

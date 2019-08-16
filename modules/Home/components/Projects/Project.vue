@@ -67,11 +67,9 @@
 
 <script>
 import { get, isNil, isEmpty } from 'lodash'
-// import AppIcon from '~/components/Icon'
 
 export default {
   name: 'Project',
-  // components: { AppIcon },
   props: {
     project: {
       type: Object,
@@ -136,6 +134,7 @@ export default {
 
   .project_card_name
     color: inherit
+    font-size: $size-1
 
     span
       position: relative

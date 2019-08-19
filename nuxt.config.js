@@ -1,6 +1,8 @@
 import pkg from './package'
 import i18nConfig from './i18n/module'
 
+const MAIN_COLOR = '#2F3439'
+
 export default {
   mode: 'universal',
 
@@ -13,7 +15,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { name: 'theme-color', content: '#2f3439' }
+      { name: 'theme-color', content: MAIN_COLOR }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -100,6 +102,17 @@ export default {
       }
     ]
   },
+
+  /*
+  ** Customize app manifest
+  */
+  manifest: {
+    background_color: MAIN_COLOR,
+    short_name: '@emanuelgsouza',
+    theme_color: MAIN_COLOR,
+    name: 'Emanuel Gonçalves - Personal Website'
+  },
+
   server: {
     port: 3000,
     host: '0.0.0.0'

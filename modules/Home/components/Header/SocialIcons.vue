@@ -27,7 +27,8 @@ export default {
     icons: [
       CONTACT_ICONS.GITHUB,
       CONTACT_ICONS.LINKEDIN,
-      CONTACT_ICONS.MEDIUM
+      CONTACT_ICONS.MEDIUM,
+      CONTACT_ICONS.CODEPEN
     ]
   })
 }
@@ -38,15 +39,23 @@ export default {
 
 .social_icons
   +flexCenter()
+  max-width: 300px
+  margin: 0 auto
 
   .column
     +flexCenter()
 
     .app_icon
+      width: 70px
+      height: 70px
+      +flexCenter()
+      padding: 5px
       color: $secondary
-      .fab
-        transition: all .2s ease
+      border-radius: 100%
+      overflow: hidden
+      transition: all .3s ease
 
-      &:hover .fab
-        transform: rotate(10deg)
+      &:hover
+        color: $primary
+        background-color: $secondary
 </style>

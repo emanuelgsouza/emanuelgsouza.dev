@@ -24,6 +24,11 @@ export const CONTACT_ICONS = {
     url: 'https://www.twitter.com/emanuelgsouza',
     title: 'contacts.links.twitter'
   },
+  CODEPEN: {
+    name: 'fab fa-codepen',
+    url: 'https://codepen.io/emanuelgsouza',
+    title: 'contacts.links.codepen'
+  },
   EMAIL: {
     name: 'fas fa-envelope',
     url: 'mailto:emanuelgdesouza@gmail.com',

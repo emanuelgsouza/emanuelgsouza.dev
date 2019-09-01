@@ -49,6 +49,11 @@
       "name": "Emilena Gonçalves - Professional page",
       "description": "An opportunity to use React and Next in a project. I used Tailwind too. I developed the design and code. One more opportunity to work with Design and Code in the same project",
       "tags": ["Professional page", "Next", "React", "Tailwind"]
+    },
+    "project7": {
+      "name": "Star Wars - Planets Quiz",
+      "description": "More the oportunity to exercise my knowledge about Vue.js. This time, I built a quiz app about the characters and yours homeworlds in the Star Wars Universe. The data come from Star Wars API. I used the Tailwind.css and Jest to execute some tests in code.",
+      "tags": ["Vue.js", "Jest", "Tailwind"]
     }
   },
   "contacts": {

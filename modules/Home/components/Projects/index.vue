@@ -76,6 +76,14 @@ export default {
           repository: null,
           tags: this.$t('projects.project6.tags'),
           image: '/projects-emilenagoncalves.jpg'
+        },
+        {
+          name: this.$t('projects.project7.name'),
+          description: this.$t('projects.project7.description'),
+          url: 'https://vue-star-wars-quiz.emanuelgsouza.dev/',
+          repository: 'https://github.com/emanuelgsouza/vue-star-wars-quiz',
+          tags: this.$t('projects.project7.tags'),
+          image: '/projects-star-wars-quiz.jpg'
         }
       ]
     }

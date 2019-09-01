@@ -49,6 +49,11 @@
       "name": "Emilena Gonçalves - Página profissional",
       "description": "Minha primeira oportunidade de usar React e Next, e usei a biblioteca Talwind também. Desenvolvi a parte de design e código. Mais uma oportunidade de trabalhar com ambos num mesmo projeto",
       "tags": ["Página profissional", "Next", "React", "Tailwind"]
+    },
+    "project7": {
+      "name": "Star Wars - Planets Quiz",
+      "description": "Mais um projeto para exercitar o uso do Vue.js, dessa vez com o Tailwind e testes com a bibliotece Jest. O quiz consiste em questionar ao usuário em qual planeta um determinado personagem do Universo Star Wars nasceu. Os dados vem da API de Star Wars",
+      "tags": ["Vue.js", "Jest", "Tailwind"]
     }
   },
   "contacts": {

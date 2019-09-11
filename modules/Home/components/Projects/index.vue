@@ -40,10 +40,10 @@ export default {
         {
           name: this.$t('projects.project2.name'),
           description: this.$t('projects.project2.description'),
-          url: null,
-          repository: 'https://github.com/legislative-votes-br',
+          url: 'https://legislativo-br.github.io/',
+          repository: 'https://github.com/legislativo-br',
           tags: this.$t('projects.project2.tags'),
-          image: '/projects-development.png'
+          image: '/projects-legislative.jpg'
         },
         {
           name: this.$t('projects.project3.name'),

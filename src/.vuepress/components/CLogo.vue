@@ -14,6 +14,5 @@ export default {
 img {
   overflow: hidden;
   border-radius: 100%;
-  @apply shadow;
 }
 </style>

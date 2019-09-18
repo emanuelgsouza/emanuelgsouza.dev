@@ -40,12 +40,11 @@ export default {
   justify-content: center;
   align-items: center;
   transition: all 0.1s;
-  @apply p-2 rounded-full;
 }
 
 .app_icon:hover,
 .app_icon:focus {
-  @apply bg-primary text-secondary;
+  @apply text-tertiary;
 }
 
 .app_icon:not(:first-of-type) {

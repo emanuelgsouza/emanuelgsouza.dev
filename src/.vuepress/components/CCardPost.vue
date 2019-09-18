@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import { format } from 'date-fns'
+
 export default {
   name: 'CCardPost',
   props: {
@@ -37,10 +39,10 @@ export default {
       return this.frontmatter.tags
     },
     date () {
-      return this.frontmatter.date
+      return new Date(this.frontmatter.date)
     },
     dateFormated () {
-      return this.date
+      return format(this.date, 'PP')
     }
   }
 }

@@ -6,7 +6,12 @@
 
 body {
   font-family: 'Lora', 'serif';
+  line-height: 1.5;
   @apply text-primary bg-secondary;
+}
+
+*::selection {
+  @apply bg-tertiary text-secondary;
 }
 
 .container {
@@ -32,6 +37,5 @@ body {
 }
 
 .link {
-  color: #456585;
-  border-bottom: 1px solid #456585;
+  @apply text-tertiary border-b border-tertiary;
 }

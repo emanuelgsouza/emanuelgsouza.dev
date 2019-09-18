@@ -15,6 +15,12 @@ module.exports = {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Lora&display=swap'
       }
+    ],
+    [
+      'meta',
+      {
+        content: '#2f3439'
+      }
     ]
   ],
   extend: '@vuepress/theme-default',
@@ -29,6 +35,7 @@ module.exports = {
     '@vuepress/last-updated',
     'vuepress-plugin-container',
     'vuepress-plugin-medium-zoom',
+    'vuepress-plugin-reading-time',
     [
       '@vuepress/blog',
       {

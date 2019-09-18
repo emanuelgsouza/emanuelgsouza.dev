@@ -8,6 +8,18 @@
     "dev": "vuepress dev src",
     "build": "vuepress build src"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "vuepress-plugin-medium-zoom": "^1.1.3"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.1.0",
+    "@vuepress/plugin-blog": "^1.2.5",
+    "@vuepress/plugin-last-updated": "^1.1.0",
+    "add": "^2.0.6",
+    "autoprefixer": "^9.6.1",
+    "tailwindcss": "^1.1.2",
+    "vuepress": "^1.1.0",
+    "vuepress-plugin-container": "^2.0.2",
+    "yarn": "^1.17.3"
+  }
 }

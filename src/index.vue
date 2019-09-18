@@ -31,6 +31,7 @@
           />
         </div>
       </section>
+      <CFooter />
     </div>
   </div>
 </template>

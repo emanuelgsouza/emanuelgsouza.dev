@@ -1,9 +1,12 @@
 <template>
   <div class="theme-container">
     <CNav />
+
     <div class="container">
       <Content class="content" />
     </div>
+
+    <CFooter />
   </div>
 </template>
 

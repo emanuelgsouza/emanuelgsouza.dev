@@ -17,7 +17,8 @@
           </div>
         </div>
       </div>
-    </div>    
+      <CFooter />
+    </div>
   </main>
 </template>
 
@@ -33,9 +34,21 @@ export default {
 </script>
 
 <style scoped>
+.projects-page {
+  @apply p-4;
+}
+
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+@screen md {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
 </style>

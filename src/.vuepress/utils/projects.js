@@ -45,7 +45,7 @@ export default {
       description: 'Minha primeira oportunidade de usar React e Next, e usei a biblioteca Talwind também. Desenvolvi a parte de design e código. Mais uma oportunidade de trabalhar com ambos num mesmo projeto',
       url: 'https://emilenagoncalves.com.br/',
       repository: null,
-      tags: ["Página profissional", "Next", "React", "Tailwind"],
+      tags: ["Next", "React", "Tailwind"],
       image: '/projects-emilenagoncalves.jpg'
     },
     {

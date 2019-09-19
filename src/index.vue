@@ -34,6 +34,13 @@
         <CListPosts
           v-bind="{ posts }"
         />
+
+        <CLink
+          class="mt-4"
+          to="/blog"
+          label="Todos os meus textos"
+          title="Confira os todos os meus textos"
+        />
       </section>
       <CFooter />
     </div>

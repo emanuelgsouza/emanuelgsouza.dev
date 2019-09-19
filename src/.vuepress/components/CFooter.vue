@@ -11,6 +11,17 @@
         <i class="fas fa-heart"></i>
       </span>
     </p>
+    <p>
+      Código no
+      <a
+        href="https://github.com/emanuelgsouza/emanuelgsouza.dev"
+        target="blank"
+        title="Confira o código fonte no Github">
+        <span class="text-tertiary">
+          <i class="fab fa-github"></i>
+        </span>
+      </a>
+    </p>
   </footer>
 </template>
 

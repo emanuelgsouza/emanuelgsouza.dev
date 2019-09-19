@@ -1,7 +1,7 @@
 <template>
-  <span class="c-tag">
-    {{ tag }}
-  </span>
+  <router-link class="c-tag" :to="tagPath">
+    <span> {{ tag }} </span>
+  </router-link>
 </template>
 
 <script>
@@ -10,6 +10,11 @@ export default {
   props: {
     tag: {
       type: String
+    }
+  },
+  computed: {
+    tagPath () {
+      return `/tag/${this.tag}`
     }
   }
 }

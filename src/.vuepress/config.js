@@ -37,6 +37,12 @@ module.exports = {
     'vuepress-plugin-medium-zoom',
     'vuepress-plugin-reading-time',
     [
+      '@vuepress/google-analytics',
+      {
+        'ga': process.env.GA
+      }
+    ],
+    [
       '@vuepress/blog',
       {
         directories: [

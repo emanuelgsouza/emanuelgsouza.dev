@@ -6,8 +6,8 @@
       <Content slot-key="header" />
 
       <p class="mb-2">
-        <small> Publicado em {{ date }} - {{ timeToRead }} minutos </small><br />
-        <small> Atualizado em {{ lastUpdated }} </small>
+        <small> Publicado em {{ date }} - {{ timeToRead }} minutos </small><br v-if="lastUpdated" />
+        <small v-if="lastUpdated"> Atualizado em {{ lastUpdated }} </small>
       </p>
 
       <Content />
@@ -31,7 +31,11 @@ export default {
       return humanDateFormat(new Date(this.$frontmatter.date))
     },
     lastUpdated () {
-      return humanDateFormatFull(new Date(this.$page.lastUpdated))
+      if (this.$page.lastUpdated) {
+        return humanDateFormatFull(new Date(this.$page.lastUpdated))
+      }
+
+      return null
     }
   }
 }
@@ -63,7 +67,7 @@ export default {
 }
 
 .content >>> p:not(:first-of-type) {
-  @apply mb-6;
+  @apply mt-6;
 }
 
 .content >>> a {

@@ -1,5 +1,8 @@
 <template>
   <router-link :to="to" class="c-link" :title="title">
+    <span class="icon" v-if="icon">
+      <i :class="icon" />
+    </span>
     <span>{{ label }}</span>
   </router-link>
 </template>
@@ -17,6 +20,10 @@ export default {
       required: true
     },
     title: {
+      type: String,
+      required: true
+    },
+    icon: {
       type: String,
       required: true
     }

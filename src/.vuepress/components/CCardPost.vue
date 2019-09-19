@@ -9,7 +9,11 @@
     <p class="date"> Publicado em: {{ dateFormated }} </p>
 
     <div class="tags">
-      <CTag v-for="(tag, index) in tags" :key="index" :tag="tag" />
+      <CTag
+        v-for="(tag, index) in tags"
+        :key="index"
+        :tag="tag"
+      />
     </div>
   </article>
 </template>

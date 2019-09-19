@@ -1,5 +1,9 @@
 <template>
-  <router-link :to="to" class="c-link" :title="title">
+  <router-link
+    :to="to"
+    class="c-link"
+    :class="{ 'inverted': inverted }"
+    :title="title">
     <span class="icon" v-if="icon">
       <i :class="icon" />
     </span>
@@ -25,6 +29,10 @@ export default {
     },
     icon: {
       type: String
+    },
+    inverted: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -34,6 +42,18 @@ export default {
 .c-link {
   transition: all 0.3s ease-out;
   @apply relative inline-block py-2 px-4 border border-primary rounded text-primary;
+}
+
+.c-link.inverted {
+  @apply border-secondary text-secondary;
+}
+
+.c-link.inverted:hover {
+  @apply text-primary;
+}
+
+.c-link.inverted::after {
+  @apply bg-secondary;
 }
 
 .c-link span {

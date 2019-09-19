@@ -18,6 +18,7 @@
     "@vuepress/plugin-blog": "^1.2.5",
     "@vuepress/plugin-google-analytics": "^1.1.0",
     "@vuepress/plugin-last-updated": "^1.1.0",
+    "@vuepress/plugin-pwa": "^1.0.0-rc.1",
     "add": "^2.0.6",
     "autoprefixer": "^9.6.1",
     "tailwindcss": "^1.1.2",

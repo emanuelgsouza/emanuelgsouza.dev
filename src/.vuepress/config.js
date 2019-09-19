@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Emanuel Gonçalves',
-  description: 'Meu blog pessoal, para compartilhamento de conhecimento relacionados ao mundo da tecnologia, teologia e outras coisas :)',
+  title: 'Emanuel Gonçalves - Engenheiro Front End',
+  description: 'Meu site pessoal, em que compartilho os meus principais projetos e meu blog pessoal, para compartilhamento de conhecimento',
   head: [
     [
       'link',
@@ -21,7 +21,13 @@ module.exports = {
       {
         content: '#2f3439'
       }
-    ]
+    ],
+    ['link', { rel: 'icon', href: '/icon.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#2f3439' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#2f3439' }]
   ],
   extend: '@vuepress/theme-default',
   postcss: {
@@ -37,14 +43,18 @@ module.exports = {
     'vuepress-plugin-medium-zoom',
     'vuepress-plugin-reading-time',
     [
-      '@vuepress/google-analytics',
-      {
+      '@vuepress/pwa', {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ],
+    [
+      '@vuepress/google-analytics', {
         'ga': process.env.GA
       }
     ],
     [
-      '@vuepress/blog',
-      {
+      '@vuepress/blog', {
         directories: [
           {
             id: 'post',

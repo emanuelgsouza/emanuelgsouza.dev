@@ -2,8 +2,15 @@
   <div class="theme-container">
     <CNav />
 
-    <div class="container has-fixed-nav">
-      <Content class="content" />
+    <div class="container has-fixed-nav content">
+      <Content slot-key="header" />
+
+      <p class="mb-2">
+        <small> Publicado em {{ date }} - {{ timeToRead }} minutos </small><br />
+        <small> Atualizado em {{ lastUpdated }} </small>
+      </p>
+
+      <Content />
 
       <CFooter />
     </div>
@@ -11,16 +18,21 @@
 </template>
 
 <script>
+import { humanDateFormat, humanDateFormatFull } from '../utils/formats'
+
 export default {
   name: 'PostLayout',
   computed: {
     timeToRead () {
       const readingTime = this.$page.readingTime || {}
       return Math.floor(readingTime.minutes || 0)
+    },
+    date () {
+      return humanDateFormat(new Date(this.$frontmatter.date))
+    },
+    lastUpdated () {
+      return humanDateFormatFull(new Date(this.$page.lastUpdated))
     }
-  },
-  mounted () {
-    console.log()
   }
 }
 </script>

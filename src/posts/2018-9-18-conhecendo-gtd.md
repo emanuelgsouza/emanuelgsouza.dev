@@ -4,7 +4,9 @@ date: 2019-07-19
 tags: ['GTD', 'personal-life']
 ---
 
+::: slot header
 # Conhecendo o método GTD
+:::
 
 ![](../.vuepress/images/gtd-post.png)
 

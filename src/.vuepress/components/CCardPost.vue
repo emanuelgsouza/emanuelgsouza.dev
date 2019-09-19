@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { format } from 'date-fns'
+import { humanDateFormat } from '../utils/formats'
 
 export default {
   name: 'CCardPost',
@@ -46,7 +46,7 @@ export default {
       return new Date(this.frontmatter.date)
     },
     dateFormated () {
-      return format(this.date, 'PP')
+      return humanDateFormat(this.date)
     }
   }
 }

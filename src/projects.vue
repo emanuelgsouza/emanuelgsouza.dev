@@ -3,13 +3,11 @@
     <CNav />
 
     <div class="projects-page has-fixed-nav">
-      <div class="container">
+      <div class="container p-4">
         <h1 class="title is-1"> Conheça alguns dos meus projetos </h1>
 
         <!-- PROJECTS -->
-        <CListProjects
-          v-bind="{ projects }"
-        />
+        <CListProjects v-bind="{ projects }" />
       </div>
       <CFooter />
     </div>
@@ -26,9 +24,3 @@ export default {
   })
 }
 </script>
-
-<style scoped>
-.projects-page {
-  @apply p-4;
-}
-</style>

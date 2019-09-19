@@ -1,7 +1,7 @@
 ---
 title: Conhecendo o método GTD
 date: 2019-07-19
-tags: ['GTD', 'personal-life']
+tags: ['gtd', 'personal-life']
 ---
 
 ::: slot header

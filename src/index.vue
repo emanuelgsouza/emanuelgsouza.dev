@@ -9,20 +9,28 @@
 
       <section class="home-page-description">
         <p>Prazer, sou Emanuel Gonçalves, casado e cristão, Engenheiro Front End, entusiasta de Tecnologias Web, Acessibilidade e Web Semântica. Trabalho como Desenvolvedor de Software na Decision6 - Store Flow. Possuo como hobbie o estudo na área de Inteligência Artificial, sobretudo Aprendizado de Máquina. Reconheço o papel do Open Source e das comunidades de desenvolvimento e sempre que possível participo delas, sobretudo no Telegram. Tenho como lema um ditado africano que diz 'To go fast, go alone; to go far, go together'.</p>
-
-        <div class="mt-4">
-          <CLink
-            to="/projects"
-            label="Projetos"
-            title="Confira os projetos pessoal de Emanuel Gonçalves"
-          />
-        </div>
       </section>
 
-      <hr class="w-full md:w-3/5 bg-primary my-4" />
+      <CHr />
+
+      <section class="mt-4">
+        <h2 class="title is-2"> Confira alguns dos meus projetos </h2>
+        <CListProjects
+          v-bind="{ projects }"
+        />
+
+        <CLink
+          class="mt-4"
+          to="/projects"
+          label="Meus projetos pessoais"
+          title="Confira os projetos pessoal de Emanuel Gonçalves"
+        />
+      </section>
+
+      <CHr />
 
       <section>
-        <h2 class="text-2xl font-bold"> Textos em meu blog </h2>
+        <h2 class="title is-2"> Confira alguns dos textos em meu blog </h2>
         <div class="posts-list">
           <CCardPost
             v-for="(post, index) in posts"
@@ -37,6 +45,9 @@
 </template>
 
 <script>
+import projectData from './.vuepress/utils/projects'
+import { slice } from 'lodash'
+
 export default {
   name: 'IndexPage',
   computed: {
@@ -44,7 +55,10 @@ export default {
       return this.$site.pages || []
     },
     posts () {
-      return this.pages.filter(page => page.title)
+      return slice(this.pages.filter(page => page.title), 0, 4)
+    },
+    projects () {
+      return slice(projectData['pt-br'], 0, 2)
     }
   }
 }

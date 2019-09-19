@@ -1,19 +1,19 @@
 <template>
-  <div class="projects-container">
+  <div class="posts-container">
     <div
-      v-for="(project, key) in projects"
+      v-for="(post, key) in posts"
       :key="key"
     >
-      <CCardProject :project="project" />
+      <CCardPost :post="post" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CListProjects',
+  name: 'CListPosts',
   props: {
-    projects: {
+    posts: {
       type: Array,
       default: () => []
     }
@@ -22,14 +22,14 @@ export default {
 </script>
 
 <style scoped>
-.projects-container {
+.posts-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
 }
 
 @screen md {
-  .projects-container {
+  .posts-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;

@@ -31,13 +31,9 @@
 
       <section>
         <h2 class="title is-2"> Confira alguns dos textos em meu blog </h2>
-        <div class="posts-list">
-          <CCardPost
-            v-for="(post, index) in posts"
-            :key="index"
-            v-bind="{ post }"
-          />
-        </div>
+        <CListPosts
+          v-bind="{ posts }"
+        />
       </section>
       <CFooter />
     </div>

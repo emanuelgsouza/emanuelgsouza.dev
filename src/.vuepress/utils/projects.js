@@ -13,7 +13,7 @@ export default {
       description: "Você conhece o conceito de puxadinho? Este projeto visa trazer de maneira rápida a informação de quais Deputados foram 'puxados' e quais foram eleitos pelos seus próprios votos. O objetivo é o usuário poder buscar seus deputados ou ter um apanhado geral de como foram as eleições no Brasil, em 2018",
       url: 'https://legislativo-br.github.io/',
       repository: 'https://github.com/legislativo-br',
-      tags: ["React", "Front-End", "Python", "Nodejs"],
+      tags: ["React", "Python"],
       image: '/projects-legislative.jpg'
     },
     {
@@ -21,7 +21,7 @@ export default {
       description: 'Tive a oportunidade de colocar em prática meus conhecimentos usando o Firebase, bem como o Framework Quasar, neste projeto. É um sistema para cadastro de problemas que potencialmente serão apreciados pela Coordenação de TI da Universidade Unigranrio, sendo possível virar TCC ou PCA (Projeto Curricular Articulador)',
       url: 'https://help-me.surge.sh',
       repository: 'https://github.com/emanuelgsouza/help-me',
-      tags: ["Vuejs", "Quasar", "Front-end", "Firebase"],
+      tags: ["Vuejs", "Quasar", "Firebase"],
       image: '/projects-helpme.jpg'
     },
     {
@@ -29,7 +29,7 @@ export default {
       description: 'Foi a oportunidade de desenvolver um projeto de Análise de Exploratória de Dados nas eleições para Prefeito de Duque de Caxias. Foram algumas descobertas bacanas. Foi o primeiro projeto usando conhecimentos de estatística, bem como da análise exploratória dos dados. Uma oportunidade para se trabalhar com a linguagem Python.',
       url: null,
       repository: 'https://github.com/emanuelgsouza/eleicoes-dc-2016',
-      tags: ["Análise de Dados Exploratória", "Python"],
+      tags: ["Análise de Dados", "Python"],
       image: '/projects-nopreview.png'
     },
     {

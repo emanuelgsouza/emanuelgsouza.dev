@@ -80,6 +80,6 @@ export default {
 }
 
 .content >>> img {
-  @apply mb-6;
+  @apply mb-6 shadow rounded-lg;
 }
 </style>

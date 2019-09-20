@@ -2,6 +2,7 @@
   <div class="project_card">
     <a
       :href="url"
+      :title="`Conheça site do projeto ${name}`"
       target="blank"
     >
       <figure
@@ -16,6 +17,7 @@
       <template v-if="hasUrl">
         <a
           :href="url"
+          :title="`Conheça site do projeto ${name}`"
           target="blank"
           class="project_card_name"
         >

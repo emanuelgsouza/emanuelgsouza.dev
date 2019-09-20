@@ -9,6 +9,7 @@
         :href="icon.url"
         :style="{ fontSize: '2rem' }"
         target="_blanck"
+        :title="icon.titlePt"
       >
         <i :class="icon.name" />
       </a>

@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page">
+  <main class="home-page">
     <div class="container">
       <CLogo class="logo" />
 
@@ -44,7 +44,7 @@
       </section>
       <CFooter />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

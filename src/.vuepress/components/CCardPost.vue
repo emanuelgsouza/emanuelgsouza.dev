@@ -1,7 +1,7 @@
 <template>
   <article class="post">
     <router-link :to="post.path" class="post-link">
-      <h3 class="post-title">{{ title }}</h3>
+      <p class="post-title">{{ title }}</p>
     </router-link>
 
     <p> {{ description }} </p>

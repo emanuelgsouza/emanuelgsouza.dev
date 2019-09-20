@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-container">
+  <main class="theme-container">
     <CNav />
 
     <div class="container has-fixed-nav content">
@@ -14,7 +14,7 @@
 
       <CFooter />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

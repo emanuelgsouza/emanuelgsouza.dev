@@ -25,9 +25,9 @@
         </a>
       </template>
       <template v-else>
-        <h4 class="project_card_name">
+        <p class="project_card_name">
           <span class="has-text-weight-bold"> {{ name }} </span>
-        </h4>
+        </p>
       </template>
 
       <!-- TAGS -->

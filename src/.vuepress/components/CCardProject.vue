@@ -149,7 +149,7 @@ export default {
 }
 
 .project_card_content .project_card_tags.tags .tag {
-  @apply p-2 text-primary bg-secondary;
+  @apply p-2 text-secondary bg-primary;
 }
 
 .project_card_content .project_card_tags.tags .tag:not(:first-of-type) {

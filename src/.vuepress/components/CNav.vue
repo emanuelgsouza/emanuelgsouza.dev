@@ -4,7 +4,7 @@
       <div class="left">
         <router-link class="left-link" to="/">
           <CLogo class="logo" />
-          <p class="navbar-title"> Emanuel </p>
+          <span class="navbar-title"> @emanuelgsouza </span>
         </router-link>
       </div>
 
@@ -39,6 +39,7 @@ export default {
   @apply fixed w-full py-2 px-4 bg-primary text-secondary shadow;
 }
 
+.left,
 .left-link,
 .right {
   display: flex;
@@ -47,7 +48,7 @@ export default {
 
 .left .logo {
   max-width: 50px;
-  @apply mr-2;
+  @apply hidden mr-2;
 }
 
 .right a:last-of-type {
@@ -56,5 +57,11 @@ export default {
 
 .navbar-title {
   @apply text-lg font-bold;
+}
+
+@screen md {
+  .left .logo {
+    @apply block;
+  }
 }
 </style>

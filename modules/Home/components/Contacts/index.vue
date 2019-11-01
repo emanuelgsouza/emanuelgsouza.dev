@@ -3,35 +3,23 @@
     <!-- TITLE -->
     <AppTitle :title="$t('contacts.title')" />
 
-    <!-- PROJECTS -->
-    <div class="columns is-mobile">
-      <div
-        v-for="(contact, key) in contacts"
-        :key="key"
-        class="column col-2 contacts_icon_container"
-      >
-        <AppIcon
-          v-bind="contact"
-          size="2rem"
-        />
-      </div>
-    </div>
+    <SocialIcons :icons="icons" />
   </div>
 </template>
 
 <script>
 import { CONTACT_ICONS } from '../../constants'
 import AppTitle from '~/components/Title'
-import AppIcon from '~/components/Icon'
+import SocialIcons from '~/components/SocialIcons'
 
 export default {
   name: 'HomeContacts',
   components: {
     AppTitle,
-    AppIcon
+    SocialIcons
   },
   data: () => ({
-    contacts: Object.values(CONTACT_ICONS)
+    icons: Object.values(CONTACT_ICONS)
   })
 }
 </script>

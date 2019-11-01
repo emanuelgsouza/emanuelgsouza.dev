@@ -19,18 +19,14 @@
 </template>
 
 <script>
-import { CONTACT_ICONS } from '../../constants'
-
 export default {
-  name: 'HomeSocialIcons',
-  data: () => ({
-    icons: [
-      CONTACT_ICONS.GITHUB,
-      CONTACT_ICONS.LINKEDIN,
-      CONTACT_ICONS.MEDIUM,
-      CONTACT_ICONS.CODEPEN
-    ]
-  })
+  name: 'SocialIcons',
+  props: {
+    icons: {
+      type: Array,
+      default: () => []
+    }
+  }
 }
 </script>
 

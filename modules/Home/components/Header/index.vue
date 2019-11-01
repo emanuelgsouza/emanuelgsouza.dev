@@ -12,20 +12,29 @@
       </h2> -->
     </hgroup>
     <!-- SOCIAL ICONS -->
-    <HomeSocialIcons />
+    <SocialIcons :icons="icons" />
   </header>
 </template>
 
 <script>
-import HomeSocialIcons from './SocialIcons'
+import { CONTACT_ICONS } from '../../constants'
+import SocialIcons from '~/components/SocialIcons'
 import PersonalLogo from '~/components/Logo'
 
 export default {
   name: 'HomeHeader',
   components: {
     PersonalLogo,
-    HomeSocialIcons
-  }
+    SocialIcons
+  },
+  data: () => ({
+    icons: [
+      CONTACT_ICONS.GITHUB,
+      CONTACT_ICONS.LINKEDIN,
+      CONTACT_ICONS.MEDIUM,
+      CONTACT_ICONS.CODEPEN
+    ]
+  })
 }
 </script>
 

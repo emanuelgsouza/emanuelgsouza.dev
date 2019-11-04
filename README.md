@@ -1,6 +1,6 @@
 # emanuelgsouza.dev
 
-> Personal website of Emanuel Gonçalves, developer at Decision6
+> Personal website of Emanuel Gonçalves, developer at Storyblok
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c4e9222c-f2da-4b92-8e03-af5d6e691e90/deploy-status)](https://app.netlify.com/sites/keen-mcnulty-322cf2/deploys)
 

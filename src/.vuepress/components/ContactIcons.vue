@@ -9,7 +9,7 @@
         :href="icon.url"
         :style="{ fontSize: '2rem' }"
         target="_blanck"
-        :title="icon.titlePt"
+        :title="icon.title"
       >
         <i :class="icon.name" />
       </a>
@@ -27,7 +27,8 @@ export default {
       CONTACT_ICONS.GITHUB,
       CONTACT_ICONS.LINKEDIN,
       CONTACT_ICONS.TELEGRAM,
-      CONTACT_ICONS.TWITTER
+      CONTACT_ICONS.TWITTER,
+      CONTACT_ICONS.CHESS
     ]
   })
 }

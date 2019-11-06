@@ -1,13 +1,12 @@
 <template>
   <div class="not-found-page">
     <div class="container">
-      <h1 class="text-5xl font-bold">Essa página não existe :(</h1>
-      <p class="text-xl"> Isso pode ter acontecido por ter encontrado uma página que não existe. Mas não deixe de conferir meu site pessoal, clicando no botão abaixo. </p>
+      <h1 class="text-5xl font-bold">This page not found :(</h1>
       <div class="mt-4">
         <CLink
           to="/"
-          label="Voltar para a Home"
-          title="Ir para a página inicial do site de Emanuel Gonçalves"
+          label="Back to home"
+          title="Back to home "
         />
       </div>
     </div>

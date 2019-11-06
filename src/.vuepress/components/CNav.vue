@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="container flex justify-between">
       <div class="left">
-        <router-link class="left-link" to="/">
+        <router-link class="left-link" to="/" title="Back to home">
           <CLogo class="logo" />
           <span class="navbar-title"> @emanuelgsouza </span>
         </router-link>

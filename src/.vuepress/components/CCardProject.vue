@@ -49,17 +49,19 @@
         {{ description }}
       </p>
 
-      <a
-        v-if="hasRepository"
-        class="button"
-        :href="repository"
-        target="blank"
-      >
-        <span class="icon is-small">
-          <i class="fab fa-github" />
-        </span>
-        <span>Github</span>
-      </a>
+      <p>
+        <a
+          v-if="hasRepository"
+          class="button"
+          :href="repository"
+          target="blank"
+        >
+          <span class="icon is-small">
+            <i class="fab fa-github" />
+          </span>
+          <span>Github</span>
+        </a>
+      </p>
     </div>
   </div>
 </template>

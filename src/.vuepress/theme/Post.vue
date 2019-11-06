@@ -2,15 +2,17 @@
   <main class="theme-container">
     <CNav />
 
-    <div class="container has-fixed-nav content">
-      <Content slot-key="header" />
+    <div class="container has-fixed-nav">
+      <div class="content">
+        <Content slot-key="header" />
 
-      <p class="mb-2">
-        <small> Publicado em {{ date }} - {{ timeToRead }} minutos </small><br v-if="lastUpdated" />
-        <small v-if="lastUpdated"> Atualizado em {{ lastUpdated }} </small>
-      </p>
+        <p class="mb-2">
+          <time> Published at {{ date }} - {{ timeToRead }} mins read </time><br v-if="lastUpdated" />
+          <time v-if="lastUpdated"> Last update at {{ lastUpdated }} </time>
+        </p>
 
-      <Content />
+        <Content />
+      </div>
 
       <CFooter />
     </div>
@@ -32,7 +34,7 @@ export default {
     },
     lastUpdated () {
       if (this.$page.lastUpdated) {
-        return humanDateFormatFull(new Date(this.$page.lastUpdated))
+        return humanDateFormat(new Date(this.$page.lastUpdated))
       }
 
       return null
@@ -46,8 +48,12 @@ export default {
   @apply pt-8 px-6;
 }
 
+.content time {
+  @apply text-sm;
+}
+
 .content >>> h1 {
-  @apply text-4xl mb-6 font-bold;
+  @apply text-4xl mb-3 font-bold;
 }
 
 .content >>> h2 {

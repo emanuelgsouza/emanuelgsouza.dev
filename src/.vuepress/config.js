@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Emanuel Gonçalves - Engenheiro Front End',
-  description: 'Meu site pessoal, em que compartilho os meus principais projetos e meu blog pessoal, para compartilhamento de conhecimento',
+  title: 'Emanuel Gonçalves - Front End Enginner',
+  description: 'My personal website and blog. A place to meet me and share my knowledge',
   head: [
     [
       'link',

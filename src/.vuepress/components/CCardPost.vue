@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 .post {
-  @apply py-4 px-6 rounded-sm text-primary bg-white shadow;
+  @apply py-4 px-4 rounded-sm text-primary bg-white shadow;
 }
 
 .post-title {

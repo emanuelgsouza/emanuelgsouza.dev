@@ -13,14 +13,14 @@
           inverted
           to="/blog"
           label="Blog"
-          title="Confira os todos os meus textos"
+          title="Show all blog posts"
         />
 
         <CLink
           inverted
           to="/projects"
-          label="Projetos"
-          title="Confira os projetos pessoal de Emanuel Gonçalves"
+          label="Projects"
+          title="Show all projects"
         />
       </div>
     </div>

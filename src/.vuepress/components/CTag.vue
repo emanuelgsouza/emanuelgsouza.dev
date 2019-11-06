@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .c-tag {
-  @apply inline-block py-1 px-2 rounded-sm bg-secondary text-primary;
+  @apply inline-block py-1 px-2 rounded-sm bg-primary text-secondary;
 }
 
 .c-tag:first-of-type {

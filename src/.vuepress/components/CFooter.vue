@@ -2,8 +2,8 @@
   <footer class="text-center pb-4">
     <hr class="w-full md:w-3/5 bg-primary mx-auto my-4" />
     <p>
-      Desenvolvido com
-      <a class="link" href="https://vuepress.vuejs.org" title="Ir para o site do Vuepress" target="blank">Vuepress</a> e muito
+      Made with
+      <a class="link" href="https://vuepress.vuejs.org" title="Go to Vuepress website" target="blank">Vuepress</a> and much
       <span class="text-tertiary">
         <i class="fas fa-mug-hot"></i>
       </span> e
@@ -12,11 +12,11 @@
       </span>
     </p>
     <p>
-      Código no
+      Code at
       <a
         href="https://github.com/emanuelgsouza/emanuelgsouza.dev"
         target="blank"
-        title="Confira o código fonte no Github">
+        title="View the website code at Github">
         <span class="text-tertiary">
           <i class="fab fa-github"></i>
         </span>

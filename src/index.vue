@@ -8,13 +8,13 @@
       <ContactIcons />
 
       <section class="home-page-description">
-        <p>Prazer, sou Emanuel Gonçalves, casado e cristão, Engenheiro Front End, entusiasta de Tecnologias Web, Acessibilidade e Web Semântica. Trabalho como Desenvolvedor de Software na Decision6 - Store Flow. Possuo como hobbie o estudo na área de Inteligência Artificial, sobretudo Aprendizado de Máquina. Reconheço o papel do Open Source e das comunidades de desenvolvimento e sempre que possível participo delas, sobretudo no Telegram. Tenho como lema um ditado africano que diz 'To go fast, go alone; to go far, go together'.</p>
+        <p>Pleasure, I am Emanuel Gonçalves, married and Christian, Front End Enginner, enthusiast of Web Technologies, Accessibility and Semantic Web. I work with Front End at Storyblok. I have as hobbie the study in the area of Artificial Intelligence, especially Machine Learning. I recognize the role of Open Source and development communities and, whenever possible, participate in them, especially in the Telegram. I have as motto an African saying that says 'To go fast, go alone; to go far, go together'</p>
       </section>
 
       <CHr />
 
       <section class="mt-4">
-        <h2 class="title is-2"> Confira alguns dos meus projetos </h2>
+        <h2 class="title is-2"> My projects </h2>
         <CListProjects
           v-bind="{ projects }"
         />
@@ -22,15 +22,15 @@
         <CLink
           class="mt-4"
           to="/projects"
-          label="Meus projetos pessoais"
-          title="Confira os projetos pessoal de Emanuel Gonçalves"
+          label="Show all projects"
+          title="Show all projects"
         />
       </section>
 
       <CHr />
 
       <section>
-        <h2 class="title is-2"> Confira alguns dos textos em meu blog </h2>
+        <h2 class="title is-2"> Blog posts </h2>
         <CListPosts
           v-bind="{ posts }"
         />
@@ -38,8 +38,8 @@
         <CLink
           class="mt-4"
           to="/blog"
-          label="Todos os meus textos"
-          title="Confira os todos os meus textos"
+          label="Show all blog posts"
+          title="Show all blog posts"
         />
       </section>
       <CFooter />

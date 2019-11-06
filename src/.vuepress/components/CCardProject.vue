@@ -138,7 +138,7 @@ export default {
 }
 
 .project_card_content .project_card_description {
-  @apply my-2;
+  @apply my-4;
 }
 
 .project_card_content .button {

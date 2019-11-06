@@ -4,7 +4,7 @@
 
     <div class="projects-page has-fixed-nav">
       <div class="container p-4">
-        <h1 class="title is-1"> Conheça alguns dos meus projetos </h1>
+        <h1 class="title is-1"> Projects </h1>
 
         <!-- PROJECTS -->
         <CListProjects v-bind="{ projects }" />

@@ -4,9 +4,11 @@
       <p class="post-title">{{ title }}</p>
     </router-link>
 
-    <p> {{ description }} </p>
+    <!-- <p> {{ description }} </p> -->
 
-    <p class="date"> Publicado em: {{ dateFormated }} </p>
+    <p class="date">
+      {{ dateFormated }}
+    </p>
 
     <div class="tags">
       <CTag
@@ -54,14 +56,18 @@ export default {
 
 <style scoped>
 .post {
-  @apply py-4 px-6 rounded-sm text-secondary bg-primary shadow;
+  @apply py-4 px-6 rounded-sm text-primary bg-white shadow;
 }
 
 .post-title {
-  @apply text-xl font-bold;
+  @apply text-xl font-bold mb-4;
 }
 
 .tags {
   @apply mt-4;
+}
+
+.date {
+  @apply text-sm;
 }
 </style>

@@ -79,6 +79,12 @@ module.exports = {
           }
         ],
       }
+    ],
+    [
+      'vuepress-plugin-feed',
+      {
+        canonical_base: 'https://emanuelgsouza.dev'
+      }
     ]
   ]
 }

@@ -1,7 +1,10 @@
 ---
 title: Conhecendo o método GTD
+description: Conheca o método GTD, Getting Things Done para os mais íntimos, em que é possível gerenciar seu dia a dia e suas metas de maneira segura e eficaz
 date: 2019-07-19
 tags: ['gtd', 'personal-life']
+feed:
+  enable: true
 ---
 
 ::: slot header

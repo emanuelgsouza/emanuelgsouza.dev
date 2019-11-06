@@ -1,7 +1,10 @@
 ---
 title: Fé não é ausência de dúvidas, mas o dom de Deus para superá-las
+description: Neste texto exponho o conceito de que é possível exercitar a nossa fé através da nossa racionalidade
 date: 2019-09-19
 tags: [ 'religiosidade', 'cristianismo' ]
+feed:
+  enable: true
 ---
 
 ::: slot header

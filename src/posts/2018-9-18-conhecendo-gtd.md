@@ -19,7 +19,7 @@ E assim, como aprendi na escola, uma das melhores maneiras de aprender um conte�
 
 ---
 
-## O que é o método GTD
+## O que é o método GTD?
 
 Primeiramente, GTD é a sigla para Getting Things Done, em tradução livre: Faça as coisas acontecerem. O nome do livro de David Allen, em português é [A arte de fazer acontecer](https://www.saraiva.com.br/a-arte-de-fazer-acontecer-9161953.html?pac_id=136793&gclid=CjwKCAjwyrvaBRACEiwAcyuzRFo3PO2dPx8i6R8ixcz2jwsoYQ_11o8OQw8J3bA4DDw86k7KU8duqxoCJLgQAvD_BwE).
 
@@ -46,9 +46,9 @@ O autor, ao fazer menção desse conceito, afirma que pegou emprestado das artes
 
 Deixo aqui, alguns conteúdos:
 
-* Um vídeo de um dos maiores lutadores de artes marciais, Bruce Lee, confira: https://www.youtube.com/watch?v=crbcW9-CEug
+* [Um vídeo de um dos maiores lutadores de artes marciais, Bruce Lee](https://www.youtube.com/watch?v=crbcW9-CEug)
 * [Texto do site Vida Organizada sobre o conceito](https://vidaorganizada.com/2015/12/01/mente-clara-como-agua/).
-* Um outro texto, agora da representante do método no Brasil, Call Daniel: [confira aqui](http://www.calldaniel.com.br/blog/o-que-significa-ter-a-mente-clara-como-agua).
+* [Texto da representante do método no Brasil, Call Daniel](http://www.calldaniel.com.br/blog/o-que-significa-ter-a-mente-clara-como-agua).
 
 ## Lidando com acordos internos
 

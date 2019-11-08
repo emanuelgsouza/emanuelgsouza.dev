@@ -1,7 +1,7 @@
 export default {
   'pt-br': [
     {
-      name: 'Acessibilidade for Devs',
+      name: 'Acessibility for Devs',
       description: `An website to learn about acessibitity. Aimed at the devs world, you'll find countless tips on how to make your site accessible. Approaches since good practices to references to W3C official documentation. The site is constantly growing, and as an Open Source project, it's always open to improvements and reviews.`,
       url: 'https://acessibilidade-for-devs.github.io/',
       repository: 'https://github.com/acessibilidade-for-devs/acessibilidade-for-devs.github.io',
@@ -25,7 +25,7 @@ export default {
       image: '/projects-helpme.jpg'
     },
     {
-      name: 'Análise de Dados das Eleições em 2016',
+      name: 'Data Analysis about the 2016 Elections',
       description: 'An opportunity to develop a Data Exploration Analysis project to elections for Mayor of Duque de Caxias city. It was some cool discoveries. It was a first project using statistical knowledges, as well data exploratory. It was a oportunity to work with Python language',
       url: null,
       repository: 'https://github.com/emanuelgsouza/eleicoes-dc-2016',
@@ -41,7 +41,7 @@ export default {
       image: '/projects-ersi2019.jpg'
     },
     {
-      name: 'Emilena Gonçalves - Página profissional',
+      name: 'Emilena Gonçalves - Professional Page',
       description: 'An opportunity to use React and Next in a project and use Tailwind too. One more opportunity to work with Design and Code in the same project',
       url: 'https://emilenagoncalves.com.br/',
       repository: null,

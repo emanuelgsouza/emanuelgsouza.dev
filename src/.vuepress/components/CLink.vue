@@ -48,7 +48,8 @@ export default {
   @apply border-secondary text-secondary;
 }
 
-.c-link.inverted:hover {
+.c-link.inverted:hover,
+.c-link.inverted:focus {
   @apply text-primary;
 }
 

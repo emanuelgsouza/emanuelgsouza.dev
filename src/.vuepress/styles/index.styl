@@ -1,0 +1,46 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: 'Lora', 'serif';
+  line-height: 1.5;
+  @apply text-primary bg-secondary;
+}
+
+*::selection {
+  @apply bg-tertiary text-secondary;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.has-fixed-nav {
+  position: relative;
+  top: 60px;
+}
+
+.title {
+  @apply mb-4;
+}
+
+.title.is-1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.subtitle,
+.title.is-2 {
+  @apply text-2xl;
+}
+
+.button {
+  @apply p-2 rounded-sm border-none;
+}
+
+.link {
+  @apply text-tertiary border-b border-tertiary;
+}

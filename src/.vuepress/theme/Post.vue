@@ -11,6 +11,14 @@
           <time v-if="lastUpdated"> Last update at {{ lastUpdated }} </time>
         </p>
 
+        <div class="tags">
+          <CTag
+            v-for="(tag, index) in tags"
+            :key="index"
+            :tag="tag"
+          />
+        </div>
+
         <Content />
       </div>
 
@@ -38,6 +46,9 @@ export default {
       }
 
       return null
+    },
+    tags () {
+      return this.$frontmatter.tags || []
     }
   }
 }
@@ -46,6 +57,14 @@ export default {
 <style scoped>
 .content {
   @apply pt-8 px-6;
+}
+
+.tags {
+  @apply mb-4;
+}
+
+.tags >>> .c-tag {
+  @apply border-none bg-white text-primary;
 }
 
 .content time {

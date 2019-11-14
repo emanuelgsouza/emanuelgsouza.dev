@@ -40,6 +40,7 @@
           :key="key"
           class="tag is-secondary"
         >
+          <i class="fas fa-tag" />
           {{ tag }}
         </span>
       </div>

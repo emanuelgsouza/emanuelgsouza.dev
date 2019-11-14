@@ -1,5 +1,6 @@
 <template>
   <router-link class="c-tag" :to="tagPath">
+    <i class="fas fa-tag" />
     <span> {{ tag }} </span>
   </router-link>
 </template>

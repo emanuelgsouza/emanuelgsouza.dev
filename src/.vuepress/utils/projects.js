@@ -55,6 +55,14 @@ export default {
       repository: 'https://github.com/emanuelgsouza/vue-star-wars-quiz',
       tags: ["Vue.js", "Jest", "Tailwind"],
       image: '/projects-star-wars-quiz.jpg'
+    },
+    {
+      name: 'bmi-utils',
+      description: 'A package to calculate body-mass-index and some other helper functions',
+      url: 'https://github.com/emanuelgsouza/bmi-utils',
+      repository: 'https://github.com/emanuelgsouza/bmi-utils',
+      tags: ["JavaScript"],
+      image: '/projects-nopreview.png'
     }
   ]
 }

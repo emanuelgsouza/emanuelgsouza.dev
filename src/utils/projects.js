@@ -6,7 +6,7 @@ export default {
       url: 'https://acessibilidade-for-devs.github.io/',
       repository: 'https://github.com/acessibilidade-for-devs/acessibilidade-for-devs.github.io',
       'tags': ['Accessibility', 'Front-End'],
-      image: '/projects-acessibility.jpg'
+      image: 'projects-acessibility.jpg'
     },
     {
       name: 'Como meu deputado foi eleito?',
@@ -14,7 +14,7 @@ export default {
       url: 'https://legislativo-br.github.io/',
       repository: 'https://github.com/legislativo-br',
       tags: ["React", "Python"],
-      image: '/projects-legislative.jpg'
+      image: 'projects-legislative.jpg'
     },
     {
       name: 'Help-Me!',
@@ -22,7 +22,7 @@ export default {
       url: 'https://help-me.surge.sh',
       repository: 'https://github.com/emanuelgsouza/help-me',
       tags: ["Vuejs", "Quasar", "Firebase"],
-      image: '/projects-helpme.jpg'
+      image: 'projects-helpme.jpg'
     },
     {
       name: 'Data Analysis about the 2016 Elections',
@@ -30,7 +30,7 @@ export default {
       url: null,
       repository: 'https://github.com/emanuelgsouza/eleicoes-dc-2016',
       tags: ["Data analysis", "Python"],
-      image: '/projects-nopreview.png'
+      image: 'projects-nopreview.png'
     },
     {
       name: 'ERSI - 2019',
@@ -38,7 +38,7 @@ export default {
       url: 'http://www.unigranrio.com.br/ersi2019/',
       repository: null,
       tags: ["Institutional website"],
-      image: '/projects-ersi2019.jpg'
+      image: 'projects-ersi2019.jpg'
     },
     {
       name: 'Emilena Gonçalves - Professional Page',
@@ -46,7 +46,7 @@ export default {
       url: 'https://emilenagoncalves.com.br/',
       repository: null,
       tags: ["Next", "React", "Tailwind"],
-      image: '/projects-emilenagoncalves.jpg'
+      image: 'projects-emilenagoncalves.jpg'
     },
     {
       name: 'Star Wars - Planets Quiz',
@@ -54,7 +54,7 @@ export default {
       url: 'https://vue-star-wars-quiz.emanuelgsouza.dev/',
       repository: 'https://github.com/emanuelgsouza/vue-star-wars-quiz',
       tags: ["Vue.js", "Jest", "Tailwind"],
-      image: '/projects-star-wars-quiz.jpg'
+      image: 'projects-star-wars-quiz.jpg'
     },
     {
       name: 'bmi-utils',
@@ -62,7 +62,7 @@ export default {
       url: 'https://github.com/emanuelgsouza/bmi-utils',
       repository: 'https://github.com/emanuelgsouza/bmi-utils',
       tags: ["JavaScript"],
-      image: '/projects-nopreview.png'
+      image: 'projects-nopreview.png'
     }
   ]
 }

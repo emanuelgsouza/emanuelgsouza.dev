@@ -9,7 +9,7 @@
         v-if="hasImage"
         class="project_card_image"
       >
-        <img :src="image" alt="">
+        <img :src="image.src" alt="">
       </figure>
     </a>
     <div class="project_card_content">
@@ -60,6 +60,7 @@
           <span class="icon is-small">
             <i class="fab fa-github" />
           </span>
+
           <span>Github</span>
         </a>
       </p>
@@ -95,7 +96,8 @@ export default {
       return get(this.project, 'repository', null)
     },
     image () {
-      return get(this.project, 'image', null)
+      const path = get(this.project, 'image', null)
+      return require(`!!assets-loader!~/assets/images/${path}`)
     },
     hasImage () {
       return !isNil(this.image)
@@ -159,5 +161,9 @@ export default {
 
 .project_card_content .project_card_tags.tags .tag:not(:first-of-type) {
   @apply ml-2;
+}
+
+.button .icon {
+  @apply mr-1;
 }
 </style>

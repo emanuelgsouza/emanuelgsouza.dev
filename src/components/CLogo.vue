@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <img src="/perfil.jpg" alt="Logo oficial do Emanuel Gonçalves" />
+    <g-image src="~/assets/images/perfil.jpg" alt="Logo oficial do Emanuel Gonçalves" />
   </figure>
 </template>
 

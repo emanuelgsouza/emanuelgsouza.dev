@@ -1,5 +1,5 @@
 <template>
-  <router-link
+  <g-link
     :to="to"
     class="c-link"
     :class="{ 'inverted': inverted }"
@@ -8,7 +8,7 @@
       <i :class="icon" />
     </span>
     <span>{{ label }}</span>
-  </router-link>
+  </g-link>
 </template>
 
 <script>

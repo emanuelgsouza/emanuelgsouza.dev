@@ -11,13 +11,6 @@
       <div class="right">
         <CLink
           inverted
-          to="/blog"
-          label="Blog"
-          title="Show all blog posts"
-        />
-
-        <CLink
-          inverted
           to="/projects"
           label="Projects"
           title="Show all projects"

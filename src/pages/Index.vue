@@ -5,7 +5,7 @@
 
       <h1 class="home-page-title"> Emanuel Gonçalves </h1>
 
-      <ContactIcons />
+      <CContactIcons />
 
       <section class="home-page-description">
         <p>Pleasure, I am Emanuel Gonçalves, married and christian, Front End Enginner, enthusiast of Web Technologies, Accessibility and Semantic Web. I work with Front End at Storyblok. I have as hobbie the study in the area of Artificial Intelligence, especially Machine Learning, play chess and play guitar. I recognize the role of Open Source and development communities and, whenever possible, participate in them, especially in the Telegram. My motto is an African saying that says 'To go fast, go alone; to go far, go together'</p>
@@ -27,32 +27,20 @@
         />
       </section>
 
-      <CHr />
-
-      <section>
-        <h2 class="title is-2"> Blog posts </h2>
-        <CListPosts
-          v-bind="{ posts }"
-        />
-
-        <CLink
-          class="mt-4"
-          to="/blog"
-          label="Show all blog posts"
-          title="Show all blog posts"
-        />
-      </section>
       <CFooter />
     </div>
   </main>
 </template>
 
 <script>
-import projectData from './.vuepress/utils/projects'
+import projectData from '../utils/projects'
 import { slice } from 'lodash'
 
 export default {
   name: 'IndexPage',
+  metaInfo: {
+    title: 'Home'
+  },
   computed: {
     pages () {
       return this.$site.pages || []

@@ -15,10 +15,13 @@
 </template>
 
 <script>
-import projectData from './.vuepress/utils/projects'
+import projectData from '../utils/projects'
 
 export default {
   name: 'ProjectsPage',
+  metaInfo: {
+    title: 'Projects'
+  },
   data: () => ({
     projects: projectData['pt-br']
   })

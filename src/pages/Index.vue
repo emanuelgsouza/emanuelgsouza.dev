@@ -8,7 +8,7 @@
       <CContactIcons />
 
       <section class="home-page-description">
-        <p>Pleasure, I am Emanuel Gonçalves, married and christian, Front End Enginner, enthusiast of Web Technologies, Accessibility and Semantic Web. I work with Front End at Storyblok. I have as hobbie the study in the area of Artificial Intelligence, especially Machine Learning, play chess and play guitar. I recognize the role of Open Source and development communities and, whenever possible, participate in them, especially in the Telegram. My motto is an African saying that says 'To go fast, go alone; to go far, go together'</p>
+        <p>Pleasure, I am Emanuel Gonçalves, married and christian, Front End Enginner, enthusiast of Web Technologies, Accessibility and Semantic Web. I work with Front End at <a class="link" href="https://www.storyblok.com/" title="Go to Storyblok website">Storyblok</a>. I have as hobbie the study in the area of Artificial Intelligence, especially Machine Learning, play chess and play guitar. I recognize the role of Open Source and development communities and, whenever possible, participate in them, especially in the Telegram. My motto is an African saying that says 'To go fast, go alone; to go far, go together'</p>
       </section>
 
       <CHr />

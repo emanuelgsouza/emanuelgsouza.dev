@@ -3,7 +3,7 @@
     <hr class="w-full md:w-3/5 bg-primary mx-auto my-4" />
     <p>
       Made with
-      <a class="link" href="https://vuepress.vuejs.org" title="Go to Vuepress website" target="blank">Vuepress</a> and much
+      <a class="link" href="https://gridsome.org" title="Go to Gridsome website" target="blank">Gridsome</a> and much
       <span class="text-tertiary">
         <i class="fas fa-mug-hot"></i>
       </span> e

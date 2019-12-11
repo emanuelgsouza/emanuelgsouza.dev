@@ -6,7 +6,7 @@
 
 ## Technologies that I use
 
-* [Vuepress](http://vuepress.vuejs.org)
+* [Gridsome](https://gridsome.org/)
 * [Tailwind](https://tailwindcss.com)
 
 ## Build Setup
@@ -16,10 +16,10 @@
 $ yarn
 
 # serve with hot reload at localhost:8080
-$ yarn run dev
+$ yarn develop
 
 # build for production and launch server
-$ yarn run build
+$ yarn build
 ```
 
 ## Author

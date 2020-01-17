@@ -1,5 +1,11 @@
 {
-  "name": "test",
+  "name": "emanuelgsouza.dev",
+  "description": "My personal website. A place to meet me",
+  "author": {
+    "name": "Emanuel Gonçalves Santana de Souza",
+    "email": "emanuelgdesouza@gmail.com",
+    "url": "https://emanuelgsouza.dev"
+  },
   "private": true,
   "scripts": {
     "build": "gridsome build",

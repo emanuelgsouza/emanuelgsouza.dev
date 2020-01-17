@@ -15,6 +15,7 @@ module.exports = {
           startUrl: '/',
           display: 'standalone',
           statusBarStyle: 'default',
+          disableServiceWorker: false,
           manifestPath: 'manifest.json',
           serviceWorkerPath: 'service-worker.js',
           cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',

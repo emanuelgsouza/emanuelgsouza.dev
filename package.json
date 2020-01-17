@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "gridsome": "^0.7.12",
-    "gridsome-plugin-pwa": "^0.0.10",
+    "gridsome-plugin-pwa": "^0.0.12",
     "lodash-es": "^4.17.15",
     "tailwindcss": "^1.1.4"
   }

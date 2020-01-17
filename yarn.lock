@@ -3815,10 +3815,10 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
-gridsome-plugin-pwa@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.10.tgz#dbc26ce36714ffe4a6d16d49ab051b2f33065dfc"
-  integrity sha512-FXUskdcE8nzUGc/UmoXb1Y6gtm1bC8jB08VM1ogJ7VH94bz5NxvXGg0wd/FaV7lRuUReESGuOz/oHKtvIXzRlg==
+gridsome-plugin-pwa@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.12.tgz#1fc2c323f90f46cc9e469072024ebe650ca675bf"
+  integrity sha512-/QjkIiMraTaZcrVLbR+L48wkdyhrG/v2kDAw7o3toY6QG37fRxREVLfEwGo7fkKbR3hm5XWhEUZcpzHVPSQKSA==
   dependencies:
     fs-extra "^8.1.0"
     image-size "^0.7.4"

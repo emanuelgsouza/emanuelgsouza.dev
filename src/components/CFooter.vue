@@ -5,10 +5,10 @@
       Made with
       <a class="link" href="https://gridsome.org" title="Go to Gridsome website" target="blank">Gridsome</a> and much
       <span class="text-tertiary">
-        <i class="fas fa-mug-hot"></i>
+        <FontAwesomeIcon icon="mug-hot" />
       </span> e
       <span class="text-tertiary">
-        <i class="fas fa-heart"></i>
+        <FontAwesomeIcon icon="heart" />
       </span>
     </p>
     <p>
@@ -18,7 +18,7 @@
         target="blank"
         title="View the website code at Github">
         <span class="text-tertiary">
-          <i class="fab fa-github"></i>
+          <FontAwesomeIcon :icon="['fab', 'github']" />
         </span>
       </a>
     </p>

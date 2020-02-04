@@ -2,18 +2,34 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import './assets/css/global.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import * as fab from '@fortawesome/free-brands-svg-icons'
+import * as fas from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import * as components from './components'
 
 export default function (Vue, { head }) {
+
+  library.add(
+    fab.faGithub,
+    fab.faMedium,
+    fab.faLinkedinIn,
+    fab.faTelegram,
+    fab.faTwitter,
+    fab.faCodepen,
+    fas.faMugHot,
+    fas.faHeart,
+    fas.faTag,
+    fas.faEnvelope,
+    fas.faChess
+  )
+
   Object.keys(components).forEach(key => {
     Vue.component(key, components[key])
   })
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://use.fontawesome.com/releases/v5.9.0/css/all.css'
-  })
+  Vue.component('FontAwesomeIcon', FontAwesomeIcon)
 
   head.link.push({
     rel: 'stylesheet',

@@ -11,7 +11,7 @@
         target="_blanck"
         :title="icon.title"
       >
-        <i :class="icon.name" />
+        <FontAwesomeIcon :icon="icon.icon" />
       </a>
     </div>
   </div>
@@ -55,5 +55,11 @@ export default {
 
 .app_icon:first-of-type {
   @apply mr-2;
+}
+
+svg {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
 }
 </style>

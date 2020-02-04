@@ -40,7 +40,7 @@
           :key="key"
           class="tag is-secondary"
         >
-          <i class="fas fa-tag" />
+          <FontAwesomeIcon icon="tag" />
           {{ tag }}
         </span>
       </div>
@@ -58,7 +58,7 @@
           target="blank"
         >
           <span class="icon is-small">
-            <i class="fab fa-github" />
+            <FontAwesomeIcon :icon="['fab', 'github']" />
           </span>
 
           <span>Github</span>

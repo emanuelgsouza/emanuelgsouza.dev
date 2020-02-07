@@ -1,14 +1,13 @@
 <template>
   <div class="project_card">
     <a
+      v-if="hasImage"
       :href="url"
       :title="`Conheça site do projeto ${name}`"
       target="blank"
+      class="project_card_image"
     >
-      <figure
-        v-if="hasImage"
-        class="project_card_image"
-      >
+      <figure>
         <img :src="image.src" alt="">
       </figure>
     </a>
@@ -46,24 +45,22 @@
       </div>
 
       <!-- DESCRIPTION -->
-      <p class="project_card_description">
+      <!-- <p class="project_card_description">
         {{ description }}
-      </p>
+      </p> -->
 
-      <p>
-        <a
-          v-if="hasRepository"
-          class="button"
-          :href="repository"
-          target="blank"
-        >
-          <span class="icon is-small">
-            <FontAwesomeIcon :icon="['fab', 'github']" />
-          </span>
+      <a
+        v-if="hasRepository"
+        class="button"
+        :href="repository"
+        target="blank"
+      >
+        <span class="icon is-small">
+          <FontAwesomeIcon :icon="['fab', 'github']" />
+        </span>
 
-          <span>Github</span>
-        </a>
-      </p>
+        <span>Github</span>
+      </a>
     </div>
   </div>
 </template>
@@ -126,7 +123,7 @@ export default {
 }
 
 .project_card_image img {
-  transition: transform 0.4s ease
+  transition: transform 0.4s ease;
 }
 
 .project_card_image:hover img {
@@ -161,11 +158,17 @@ export default {
 }
 
 .project_card_content .project_card_tags.tags .tag {
-  @apply p-2 text-secondary bg-primary;
+  display: inline-block;
+  @apply py-2 text-primary text-sm;
 }
 
 .project_card_content .project_card_tags.tags .tag:not(:first-of-type) {
   @apply ml-2;
+}
+
+.button {
+  display: inline-block;
+  @apply mt-2;
 }
 
 .button .icon {

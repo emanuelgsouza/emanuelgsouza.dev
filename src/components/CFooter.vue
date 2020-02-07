@@ -1,6 +1,6 @@
 <template>
   <footer class="text-center pb-4">
-    <hr class="w-full md:w-3/5 bg-primary mx-auto my-4" />
+    <hr class="divisor" />
     <p>
       Made with
       <a class="link" href="https://gridsome.org" title="Go to Gridsome website" target="blank">Gridsome</a> and much
@@ -31,5 +31,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.divisor {
+  @apply w-full bg-primary mx-auto my-4;
+}
 </style>

@@ -8,8 +8,8 @@
 
         <!-- PROJECTS -->
         <CListProjects v-bind="{ projects }" />
+        <CFooter />
       </div>
-      <CFooter />
     </div>
   </main>
 </template>

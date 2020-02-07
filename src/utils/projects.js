@@ -63,6 +63,14 @@ export default {
       repository: 'https://github.com/emanuelgsouza/bmi-utils',
       tags: ["JavaScript"],
       image: 'projects-nopreview.png'
+    },
+    {
+      name: 'Proverbs App',
+      description: 'A website to share a proverb of day!',
+      url: 'https://proverb-of-day.netlify.com/',
+      repository: 'https://github.com/emanuelgsouza/proberbs-app',
+      tags: ["Vuejs", "Nuxt"],
+      image: 'projects-nopreview.png'
     }
   ]
 }

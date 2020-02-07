@@ -1,4 +1,13 @@
 const tailwindcss = require("tailwindcss")
+const purgecss = require("@fullhuman/postcss-purgecss")
+
+const purgeCssConfig = {
+  content: [
+    "./src/**/*.vue",
+    "./src/**/*.html",
+    "./src/**/*.js"
+  ]
+}
 
 const siteConfig = {
   title: 'Emanuel Gonçalves - Front End Enginner',
@@ -38,7 +47,8 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          tailwindcss
+          tailwindcss,
+          ...[purgecss(purgeCssConfig)]
         ]
       }
     }

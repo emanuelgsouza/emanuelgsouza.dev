@@ -21,5 +21,8 @@
     "gridsome": "^0.7.12",
     "gridsome-plugin-pwa": "^0.0.12",
     "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6"
   }
 }

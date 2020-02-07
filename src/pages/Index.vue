@@ -34,7 +34,6 @@
 
 <script>
 import projectData from '../utils/projects'
-import { slice } from 'lodash'
 
 export default {
   name: 'IndexPage',
@@ -49,7 +48,7 @@ export default {
       return slice(this.pages.filter(page => page.title), 0, 4)
     },
     projects () {
-      return slice(projectData['pt-br'], 0, 2)
+      return JSON.parse(JSON.stringify(projectData))['pt-br'].slice(0, 2)
     }
   }
 }

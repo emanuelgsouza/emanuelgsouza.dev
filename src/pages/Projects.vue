@@ -23,7 +23,7 @@ export default {
     title: 'Projects'
   },
   data: () => ({
-    projects: projectData['pt-br']
+    projects: JSON.parse(JSON.stringify(projectData['pt-br']))
   })
 }
 </script>

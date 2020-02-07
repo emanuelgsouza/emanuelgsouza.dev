@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import { get, isNil, isEmpty } from 'lodash'
+import { isNil } from '../utils/functions'
 
 export default {
   name: 'CCardProject',
@@ -81,23 +81,28 @@ export default {
   },
   computed: {
     name () {
-      return get(this.project, 'name', '') || ''
+      return this.project.name || ''
     },
     description () {
-      return get(this.project, 'description', '') || ''
+      return this.project.description || ''
     },
     url () {
-      return get(this.project, 'url', null)
+      return this.project.url || null
     },
     hasUrl () {
       return !isNil(this.url)
     },
     repository () {
-      return get(this.project, 'repository', null)
+      return this.project.repository || null
     },
     image () {
-      const path = get(this.project, 'image', null)
-      return require(`!!assets-loader!~/assets/images/${path}`)
+      const path = this.project.image || null
+
+      if (path) {
+        return require(`!!assets-loader!~/assets/images/${path}`) 
+      }
+
+      return ''
     },
     hasImage () {
       return !isNil(this.image)
@@ -106,10 +111,10 @@ export default {
       return !isNil(this.repository)
     },
     tags () {
-      return get(this.project, 'tags', []) || []
+      return this.project.tags || []
     },
     hasTags () {
-      return !isEmpty(this.tags)
+      return this.tags.length > 0
     }
   }
 }

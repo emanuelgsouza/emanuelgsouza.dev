@@ -47,8 +47,8 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          tailwindcss,
-          ...[purgecss(purgeCssConfig)]
+          tailwindcss
+          // ...[purgecss(purgeCssConfig)]
         ]
       }
     }

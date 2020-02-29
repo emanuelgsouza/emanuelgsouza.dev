@@ -27,7 +27,7 @@ export default {
     {
       name: 'Data Analysis about the 2016 Elections',
       description: 'An opportunity to develop a Data Exploration Analysis project to elections for Mayor of Duque de Caxias city. It was some cool discoveries. It was a first project using statistical knowledges, as well data exploratory. It was a oportunity to work with Python language',
-      url: null,
+      url: 'https://eleicoes-dc.emanuelgsouza.dev/',
       repository: 'https://github.com/emanuelgsouza/eleicoes-dc-2016',
       tags: ["Data analysis", "Python"],
       image: 'projects-nopreview.png'

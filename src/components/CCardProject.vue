@@ -3,7 +3,7 @@
     <a
       v-if="hasImage"
       :href="url"
-      :title="`Conheça site do projeto ${name}`"
+      :title="`Get to know the project website ${name}`"
       target="blank"
       class="project_card_image"
     >
@@ -16,7 +16,7 @@
       <template v-if="hasUrl">
         <a
           :href="url"
-          :title="`Conheça site do projeto ${name}`"
+          :title="`Get to know the project website ${name}`"
           target="blank"
           class="project_card_name"
         >

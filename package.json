@@ -18,11 +18,11 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "gridsome": "^0.7.12",
-    "gridsome-plugin-pwa": "^0.0.12",
+    "gridsome": "^0.7.13",
+    "gridsome-plugin-pwa": "^0.0.13",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.6"
+    "@fullhuman/postcss-purgecss": "^2.1.0"
   }
 }

@@ -71,6 +71,14 @@ export default {
       repository: 'https://github.com/emanuelgsouza/proberbs-app',
       tags: ["Vuejs", "Nuxt"],
       image: 'projects-nopreview.png'
+    },
+    {
+      name: 'CoronaBR',
+      description: 'A website to get some informations about the COVID-19 in Brazil',
+      url: 'https://coronabr.emanuelgsouza.dev/',
+      repository: 'https://github.com/emanuelgsouza/coronabr-app',
+      tags: ["Vuejs", "Nuxt"],
+      image: 'projects-nopreview.png'
     }
   ]
 }

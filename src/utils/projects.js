@@ -67,7 +67,7 @@ export default {
     {
       name: 'Proverbs App',
       description: 'A website to share a proverb of day!',
-      url: 'https://proverb-of-day.netlify.com/',
+      url: 'https://proverb-of-day.netlify.app/',
       repository: 'https://github.com/emanuelgsouza/proberbs-app',
       tags: ["Vuejs", "Nuxt"],
       image: 'projects-nopreview.png'

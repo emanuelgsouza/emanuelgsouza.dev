@@ -5,7 +5,8 @@ const purgeCssConfig = {
   content: [
     "./src/**/*.vue",
     "./src/**/*.html",
-    "./src/**/*.js"
+    "./src/**/*.js",
+    "./src/**/*.css"
   ]
 }
 
@@ -47,8 +48,8 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          tailwindcss
-          // ...[purgecss(purgeCssConfig)]
+          tailwindcss,
+          ...[purgecss(purgeCssConfig)]
         ]
       }
     }

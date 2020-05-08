@@ -17,6 +17,22 @@ export default {
       image: 'projects-legislative.jpg'
     },
     {
+      name: 'CoronaBR',
+      description: 'A website to get some informations about the COVID-19 in Brazil',
+      url: 'https://coronabr.emanuelgsouza.dev/',
+      repository: 'https://github.com/emanuelgsouza/coronabr-app',
+      tags: ["Vuejs", "Nuxt"],
+      image: 'projects-nopreview.png'
+    },
+    {
+      name: 'Star Wars - Planets Quiz',
+      description: 'More the oportunity to exercise my knowledge about Vue.js. This time, I built a quiz app about the characters and yours homeworlds in the Star Wars Universe. The data come from Star Wars API. I used the Tailwind.css and Jest to execute some tests in code.',
+      url: 'https://vue-star-wars-quiz.emanuelgsouza.dev/',
+      repository: 'https://github.com/emanuelgsouza/vue-star-wars-quiz',
+      tags: ["Vue.js", "Jest", "Tailwind"],
+      image: 'projects-star-wars-quiz.jpg'
+    },
+    {
       name: 'Help-Me!',
       description: 'I had the opportunity to put my knowledge into practice using Firebase (Firestore) and Quasar Framework. It is a system for registering problems that potentially will be appreciated by the IT Coordination of Unigranrio University',
       url: 'https://help-me.surge.sh',
@@ -49,14 +65,6 @@ export default {
       image: 'projects-emilenagoncalves.jpg'
     },
     {
-      name: 'Star Wars - Planets Quiz',
-      description: 'More the oportunity to exercise my knowledge about Vue.js. This time, I built a quiz app about the characters and yours homeworlds in the Star Wars Universe. The data come from Star Wars API. I used the Tailwind.css and Jest to execute some tests in code.',
-      url: 'https://vue-star-wars-quiz.emanuelgsouza.dev/',
-      repository: 'https://github.com/emanuelgsouza/vue-star-wars-quiz',
-      tags: ["Vue.js", "Jest", "Tailwind"],
-      image: 'projects-star-wars-quiz.jpg'
-    },
-    {
       name: 'bmi-utils',
       description: 'A package to calculate body-mass-index and some other helper functions',
       url: 'https://github.com/emanuelgsouza/bmi-utils',
@@ -69,14 +77,6 @@ export default {
       description: 'A website to share a proverb of day!',
       url: 'https://proverb-of-day.netlify.app/',
       repository: 'https://github.com/emanuelgsouza/proberbs-app',
-      tags: ["Vuejs", "Nuxt"],
-      image: 'projects-nopreview.png'
-    },
-    {
-      name: 'CoronaBR',
-      description: 'A website to get some informations about the COVID-19 in Brazil',
-      url: 'https://coronabr.emanuelgsouza.dev/',
-      repository: 'https://github.com/emanuelgsouza/coronabr-app',
       tags: ["Vuejs", "Nuxt"],
       image: 'projects-nopreview.png'
     }

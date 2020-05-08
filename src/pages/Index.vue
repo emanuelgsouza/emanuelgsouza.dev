@@ -14,7 +14,7 @@
       <CHr />
 
       <section class="mt-4">
-        <h2 class="title is-2"> My projects </h2>
+        <h2 class="title is-2"> My best projects </h2>
         <CListProjects
           v-bind="{ projects }"
         />
@@ -48,7 +48,7 @@ export default {
       return slice(this.pages.filter(page => page.title), 0, 4)
     },
     projects () {
-      return JSON.parse(JSON.stringify(projectData))['pt-br'].slice(0, 2)
+      return JSON.parse(JSON.stringify(projectData))['pt-br'].slice(0, 4)
     }
   }
 }

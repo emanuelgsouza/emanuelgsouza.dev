@@ -1,0 +1,30 @@
+{
+  "name": "emanuelgsouza-11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
+    "dotenv": "^10.0.0",
+    "plop": "^2.7.4",
+    "prettier": "^2.3.1",
+    "sass": "^1.35.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf _site/",
+    "serve": "ELEVENTY_ENV=dev eleventy --serve",
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "start": "yarn serve & yarn watch:sass",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "lint:styles": "npx stylelint '**/*.scss'",
+    "build": "yarn clean && ELEVENTY_ENV=prod npx eleventy"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "dayjs": "^1.10.5"
+  }
+}

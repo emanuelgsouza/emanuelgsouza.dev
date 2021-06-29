@@ -1,0 +1,27 @@
+---
+layout: layouts/base.liquid
+---
+
+<section class="section">
+  <header class="blog-post__header">
+    <figure class="image mb-4">
+      <img src="{{ banner | getBannerSource }}" alt="">
+    </figure>
+
+    <div class="blog-post__headline">
+      {% include partials/tags.liquid, tags: tags, asLink: true %}
+
+      {% include partials/title.liquid, tag: 1, title: title %}
+
+      <p>
+        Publicado em {{ date | readableDate }} - 12 minutos de leitura
+      </p>
+    </div>
+  </header>
+
+  <hr>
+
+  <div class="content">
+    {{ content | safe }}
+  </div>
+</section>

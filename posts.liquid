@@ -1,0 +1,18 @@
+---
+title: Blog Posts
+layout: layouts/base.liquid
+permalink: /posts/
+eleventyExcludeFromCollections: true
+---
+
+<section class="section">
+  {% include partials/title, tag: 1, title: "Meus posts" %}
+
+  <div class="columns is-multiline">
+    {% for post in collections.posts %}
+      <div class="column is-half">
+        {% include partials/post-card, post: post %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<ul class="tags">
+  {% assign internalTags = tags %}
+  {% if max %}
+    {% assign internalTags = tags | slice: 0, max %}
+  {% endif %}
+  {% for tag in internalTags %}
+    <li class="tag">
+      {% if asLink %}
+        <a href="/tags/{{ tag | url }}">
+          #{{ tag }}
+        </a>
+      {% else %}
+        #{{ tag }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

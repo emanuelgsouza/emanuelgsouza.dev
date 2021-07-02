@@ -1,0 +1,21 @@
+<div class="post-card card">
+  <a href="{{ post.data.page.url }}" class="card-image">
+    <figure class="image">
+      <img src="{{ post.data.banner | getBannerSource }}" alt="">
+    </figure>
+  </a>
+
+  <div class="card-content">
+    {% include partials/tags, tags: post.data.tags, asLink: true, max: 2 %}
+
+    <p class="title is-4"> {{ post.data.title }} </p>
+
+    <p class="mb-4">
+      {{ post.data.description }} - <a href="{{ post.data.page.url }}" title="Continuar leitura do texto {{ post.data.title }}">Continuar leitura...</a>
+    </p>
+
+    <p>
+      Publicado em {{ post.data.date | readableDate }}
+    </p>
+  </div>
+</div>

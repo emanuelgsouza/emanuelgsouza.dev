@@ -1,0 +1,45 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container is-max-desktop">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/" title="Navegar para a Home Page do site">
+        @emanuelgsouza
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/posts">
+          Blog
+        </a>
+
+        <a class="navbar-item" href="/projects">
+          Projects
+        </a>
+      </div>
+
+      <ul class="navbar-end">
+        <li class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary is-outlined" href="{{ socialMedia.GITHUB.url }}" title="{{ socialMedia.GITHUB.titlePt }}" target="_blank">
+              {% include partials/icon, icon: socialMedia.GITHUB.icon %}
+            </a>
+
+            <a class="button is-primary is-outlined" href="{{ socialMedia.LINKEDIN.url }}" title="{{ socialMedia.LINKEDIN.titlePt }}" target="_blank">
+              {% include partials/icon, icon: socialMedia.LINKEDIN.icon %}
+            </a>
+
+            <a class="button is-primary is-outlined" href="{{ socialMedia.TWITTER.url }}" title="{{ socialMedia.TWITTER.titlePt }}" target="_blank">
+              {% include partials/icon, icon: socialMedia.TWITTER.icon %}
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

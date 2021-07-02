@@ -18,10 +18,11 @@
     "clean": "rm -rf _site/",
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "watch:sass": "npx sass sass:_site/css --watch",
+    "build:css": "npx sass sass:_site/css",
     "start": "yarn serve & yarn watch:sass",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "lint:styles": "npx stylelint '**/*.scss'",
-    "build": "yarn clean && ELEVENTY_ENV=prod npx eleventy"
+    "build": "yarn clean && yarn build:css && ELEVENTY_ENV=prod npx eleventy"
   },
   "dependencies": {
     "bulma": "^0.9.3",

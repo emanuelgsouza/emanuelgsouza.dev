@@ -1,17 +1,11 @@
 // my own colors
-$background-color: hsl(0, 0, 99);
-$tipography-color: #2f3439;
+$background-color: #fcfcfc;
+$tipography-color: #282a36;
 $white: #fff;
 
 // primary colors
-$primary: hsl(209, 100, 25);
-$primary-45: hsl(209, 100, 45);
-$primary-75: hsl(209, 100, 75);
-
-// contrast
-$contrast: hsl(145, 64, 25);
-$contrast-45: hsl(145, 64, 45);
-$contrast-75: hsl(145, 64, 75);
+$primary: #003d75;
+$navy-blue: #000080;
 
 // updating bulma variables
 
@@ -22,7 +16,7 @@ $family-sans-serif: 'Lora', sans-serif;
 $text: $tipography-color;
 $text-strong: $tipography-color;
 $link: $primary;
-$link-hover: $primary-45;
+$link-hover: $navy-blue;
 
 // navbar customizations
 $navbar-background-color: $background-color;

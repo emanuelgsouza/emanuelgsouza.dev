@@ -11,7 +11,7 @@ const isProd = environment === PROD_ENV;
 module.exports = {
   siteName: 'Emanuel Gonçalves',
   author: 'emanuelgsouza',
-  description: 'Emanuel Gonçalves - Front End Enginner',
+  description: 'Meu blog pessoal, local em que compartilho um pouco do meu aprendizado, meus projetos e meus pensamentos',
   environment,
   isProd,
   baseUrl,

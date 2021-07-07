@@ -24,6 +24,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getFullSlugFromBanner", bannerFile => {
     return `${env.baseUrl}/images/posts/${bannerFile}`;
   });
+  eleventyConfig.addFilter("getDescription", (description) => {
+    return description || env.description;
+  });
 
   // plugins
   eleventyConfig.addPlugin(syntaxHighlight);

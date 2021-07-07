@@ -1,5 +1,5 @@
 <div class="card">
-  <a href="{{ project.url }}" class="card-image">
+  <a href="{{ project.url }}" class="card-image" title="Conheça o projeto {{ project.name }}">
     <figure class="image">
       <img src="/images/projects/{{ project.image }}" alt="">
     </figure>
@@ -12,13 +12,23 @@
 
     <div class="buttons">
       {% if project.repository %}
-        <a href="{{project.repository}}" target="_blank" class="button is-small">
+        <a
+          href="{{project.repository}}"
+          target="_blank"
+          rel="noreferrer"
+          class="button is-small"
+        >
           Github
         </a>
       {% endif %}
 
       {% if project.url %}
-      <a href="{{project.url}}" target="_blank" class="button is-small">
+      <a
+        href="{{project.url}}"
+        target="_blank"
+        rel="noreferrer"
+        class="button is-small"
+      >
         Link
       </a>
       {% endif %}

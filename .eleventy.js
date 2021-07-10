@@ -22,7 +22,11 @@ module.exports = function (eleventyConfig) {
     return `/images/posts/${bannerFile}`;
   });
   eleventyConfig.addFilter("getFullSlugFromBanner", bannerFile => {
-    return `${env.baseUrl}/images/posts/${bannerFile}`;
+    if (bannerFile) {
+      return `${env.baseUrl}/images/posts/${bannerFile}`;
+    }
+
+    return `${env.baseUrl}/images/cover.jpg`;
   });
   eleventyConfig.addFilter("getDescription", (description) => {
     return description || env.description;

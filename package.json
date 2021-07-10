@@ -1,28 +1,31 @@
 {
-  "name": "emanuelgsouza.dev",
-  "description": "My personal website. A place to meet me",
-  "author": {
-    "name": "Emanuel Gonçalves Santana de Souza",
-    "email": "emanuelgdesouza@gmail.com",
-    "url": "https://emanuelgsouza.dev"
+  "name": "emanuelgsouza-11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
+    "dotenv": "^10.0.0",
+    "plop": "^2.7.4",
+    "prettier": "^2.3.1",
+    "sass": "^1.35.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
   },
-  "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "clean": "rm -rf _site/",
+    "serve": "ELEVENTY_ENV=dev eleventy --serve",
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "build:css": "npx sass sass:_site/css",
+    "start": "yarn serve & yarn watch:sass",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "lint:styles": "npx stylelint '**/*.scss'",
+    "build": "yarn clean && yarn build:css && ELEVENTY_ENV=prod npx eleventy"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/vue-fontawesome": "^2.0.0",
-    "@gridsome/plugin-google-analytics": "^0.1.1",
-    "gridsome": "^0.7.20",
-    "gridsome-plugin-pwa": "^0.0.18",
-    "tailwindcss": "^1.8.0"
-  },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0"
+    "bulma": "^0.9.3",
+    "dayjs": "^1.10.5"
   }
 }

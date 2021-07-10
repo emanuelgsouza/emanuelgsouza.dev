@@ -1,0 +1,12 @@
+---
+title: Projetos
+layout: layouts/base.liquid
+permalink: /projects/
+eleventyExcludeFromCollections: true
+---
+
+<section class="section">
+  {% include partials/title, tag: 1, title: "Meus projetos" %}
+
+  {% include partials/project-card-grid, projects: projects.ptBr %}
+</section>

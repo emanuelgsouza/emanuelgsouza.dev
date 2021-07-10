@@ -1,0 +1,44 @@
+<footer class="footer">
+  <div class="container is-mas-desktop">
+    <ul class="columns is-centered">
+      <li class="column is-narrow">
+        <a
+          class="button is-primary is-outlined"
+          href="{{ socialMedia.GITHUB.url }}"
+          title="{{ socialMedia.GITHUB.titlePt }}"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {% include partials/icon, icon: socialMedia.GITHUB.icon %}
+        </a>
+      </li>
+
+      <li class="column is-narrow">
+        <a
+          class="button is-primary is-outlined"
+          href="{{ socialMedia.LINKEDIN.url }}"
+          title="{{ socialMedia.LINKEDIN.titlePt }}"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {% include partials/icon, icon: socialMedia.LINKEDIN.icon %}
+        </a>
+      </li>
+
+      <li class="column is-narrow">
+        <a
+          class="button is-primary is-outlined"
+          href="{{ socialMedia.TWITTER.url }}"
+          title="{{ socialMedia.TWITTER.titlePt }}"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {% include partials/icon, icon: socialMedia.TWITTER.icon %}
+        </a>
+      </li>
+    </ul>
+
+    <p class="has-text-centered">Feito com Eleventy - 2021</p>
+    <p class="has-text-centered"> Código no <a href="https://github.com/emanuelgsouza/emanuelgsouza.dev" title="Confira o código fonte deste site no Github"><span class="icon is-small"><i class="fab fa-github" aria-hidden="true"></i></span></a></p>
+  </div>
+</footer>

@@ -1,7 +1,7 @@
 module.exports = {
   ptBr: [
     {
-      name: 'Acessibility for Devs',
+      name: 'Acessibilidade for Devs',
       description: `An website to learn about acessibitity. Aimed at the devs world, you'll find countless tips on how to make your site accessible. Approaches since good practices to references to W3C official documentation. The site is constantly growing, and as an Open Source project, it's always open to improvements and reviews.`,
       url: 'https://acessibilidade-for-devs.github.io/',
       repository: 'https://github.com/acessibilidade-for-devs/acessibilidade-for-devs.github.io',

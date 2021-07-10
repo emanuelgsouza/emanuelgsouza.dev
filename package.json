@@ -8,8 +8,8 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
     "dotenv": "^10.0.0",
     "plop": "^2.7.4",
-    "prettier": "^2.3.1",
-    "sass": "^1.35.1",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.2",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-config-standard": "^22.0.0"
@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "bulma": "^0.9.3",
-    "dayjs": "^1.10.5"
+    "dayjs": "^1.10.6"
   }
 }

@@ -4,9 +4,9 @@
     {% assign internalTags = tags | slice: 0, max %}
   {% endif %}
   {% for tag in internalTags %}
-    <li class="tag">
+    <li class="tag is-dark">
       {% if asLink %}
-        <a href="/tags/{{ tag | url }}">
+        <a class="has-text-white" href="/tags/{{ tag | url }}">
           #{{ tag }}
         </a>
       {% else %}

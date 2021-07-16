@@ -16,6 +16,6 @@ module.exports = {
   isProd,
   baseUrl,
   tracking: {
-    gtag: isProd ? process.env.GOOGLE_ANALYTICS_ID : '',
+    gtag: isProd ? process.env.GA : '',
   },
 };

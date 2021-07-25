@@ -1,0 +1,34 @@
+---
+pagination:
+    data: posts
+    size: 1
+    alias: post
+permalink: "{{ post.full_slug }}/"
+layout: layouts/base.liquid
+---
+
+{{ post.tag_list | log }}
+
+<section class="section">
+  <header class="blog-post__header">
+    <figure class="image mb-4">
+      <img src="{{ post.data.banner.filename }}" alt="">
+    </figure>
+
+    <div class="blog-post__headline">
+      {% include partials/tags.liquid, tags: post.tag_list, asLink: true %}
+
+      {% include partials/title.liquid, tag: 1, title: post.data.title %}
+
+      <p>
+        Publicado em {{ post.published_at | readableDate }} - 12 minutos de leitura
+      </p>
+    </div>
+  </header>
+
+  <hr>
+
+  <div class="content">
+    {{ post.data.content | resolveRichtext }}
+  </div>
+</section>

@@ -26,9 +26,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getBannerSource", bannerFile => {
     return `/images/posts/${bannerFile}`;
   });
+  // TODO: refactor this to use the Image Service
   eleventyConfig.addFilter("getFullSlugFromBanner", bannerFile => {
     if (bannerFile) {
-      return `${env.baseUrl}/images/posts/${bannerFile}`;
+      return bannerFile;
     }
 
     return `${env.baseUrl}/images/cover.jpg`;

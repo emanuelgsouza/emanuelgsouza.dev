@@ -1,24 +1,26 @@
 ---
 pagination:
-    data: posts
-    size: 1
-    alias: post
+  data: posts
+  size: 1
+  alias: post
 permalink: "{{ post.full_slug }}/"
 layout: layouts/base.liquid
+eleventyComputed:
+  title: "{{ post.content.title }}"
+  description: "{{ post.content.description }}"
+  banner: "{{ post.content.banner.filename }}"
 ---
-
-{{ post.tag_list | log }}
 
 <section class="section">
   <header class="blog-post__header">
     <figure class="image mb-4">
-      <img src="{{ post.data.banner.filename }}" alt="">
+      <img src="{{ post.content.banner.filename }}" alt="">
     </figure>
 
     <div class="blog-post__headline">
       {% include partials/tags.liquid, tags: post.tag_list, asLink: true %}
 
-      {% include partials/title.liquid, tag: 1, title: post.data.title %}
+      {% include partials/title.liquid, tag: 1, title: post.content.title %}
 
       <p>
         Publicado em {{ post.published_at | readableDate }} - 12 minutos de leitura
@@ -29,6 +31,6 @@ layout: layouts/base.liquid
   <hr>
 
   <div class="content">
-    {{ post.data.content | resolveRichtext }}
+    {{ post.content.content | resolveRichtext }}
   </div>
 </section>

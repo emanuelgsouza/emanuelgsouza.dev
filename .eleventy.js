@@ -1,9 +1,14 @@
+require('dotenv').config()
+
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const env = require('./_data/env')
+const RichTextResolver = require('storyblok-js-client/dist/rich-text-resolver.cjs')
 
 dayjs.extend(utc)
+
+const resolver = new RichTextResolver()
 
 module.exports = function (eleventyConfig) {
   // copy files
@@ -48,5 +53,25 @@ module.exports = function (eleventyConfig) {
       //round to nearest minute
       return Math.round(timeInMinutes);
     }
+  })
+
+  eleventyConfig.addFilter("homeStory", (storyblokData = []) => {
+    return storyblokData.find(storyItem => storyItem.full_slug === 'home')
+  })
+
+  eleventyConfig.addFilter("lastPosts", (storyblokData = []) => {
+    return storyblokData.filter(storyItem => storyItem.full_slug.indexOf('posts/') !== -1)
+  })
+
+  eleventyConfig.addFilter("storyblokPosts", (storyblokData = []) => {
+    return storyblokData.filter(storyItem => storyItem.full_slug.indexOf('posts/') !== -1)
+  })
+
+  eleventyConfig.addFilter("storyblokProjects", (storyblokData = []) => {
+    return storyblokData.filter(storyItem => storyItem.full_slug.indexOf('projects/') !== -1)
+  })
+
+  eleventyConfig.addFilter('resolveRichtext', (content = {}) => {
+    return resolver.render(content)
   })
 };

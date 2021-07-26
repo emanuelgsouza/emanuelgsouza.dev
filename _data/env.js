@@ -9,7 +9,7 @@ const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;
 
 module.exports = {
-  siteName: 'Emanuel Gonçalves - Front End Enginner',
+  siteName: 'Emanuel Gonçalves - Web Software Developer',
   author: 'emanuelgsouza',
   description: 'Meu blog pessoal, local em que compartilho um pouco do meu aprendizado, meus projetos e meus pensamentos',
   environment,

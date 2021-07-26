@@ -1,6 +1,9 @@
 require('dotenv').config()
 
+// plugins
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const env = require('./_data/env')
@@ -41,6 +44,12 @@ module.exports = function (eleventyConfig) {
 
   // plugins
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: process.env.HOST_NAME,
+    },
+  });
 
   eleventyConfig.addFilter("readingTime", text => {
     // credits: https://ishambuilds.tech/posts/2020-05-19-building-a-reading-time-indicator-with-eleventy/

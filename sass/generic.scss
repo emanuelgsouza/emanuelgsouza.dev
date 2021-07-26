@@ -16,6 +16,15 @@ figcaption {
   object-fit: cover;
 }
 
+.tag {
+  transition: transform 0.3 ease-in-out;
+}
+
+.tag:hover,
+.tag:focus-within {
+  transform: scale(1.05);
+}
+
 .content {
   .tag {
     background-color: transparent;

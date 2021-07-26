@@ -1,17 +1,22 @@
+{% assign postURL = post.full_slug %}
 <div class="post-card card">
-  <a href="{{ post.data.page.url }}" class="card-image" title="Confira o post '{{ post.data.title }}'">
+  <a href="{{ postURL }}" class="card-image" title="Confira o post '{{ post.data.title }}'">
     <figure class="image">
-      <img src="{{ post.data.banner | getBannerSource }}" alt="">
+      <img src="{{ post.data.banner.filename }}" alt="">
     </figure>
   </a>
 
   <div class="card-content">
-    {% include partials/tags, tags: post.data.tags, asLink: true, max: 2 %}
+    {% include partials/tags, tags: post.tag_list, asLink: true, max: 2 %}
 
-    <p class="title is-4"> {{ post.data.title }} </p>
+    <p class="title is-4">
+      <a class="has-text-black" href="{{ postURL }}" title="Confira o post '{{ post.data.title }}'">
+        {{ post.data.title }}
+      </a>
+    </p>
 
     <p class="mb-4">
-      {{ post.data.description }} - <a href="{{ post.data.page.url }}" title="Continuar leitura do texto {{ post.data.title }}">Continuar leitura...</a>
+      {{ post.data.description }} - <a href="{{ postURL }}" title="Continuar leitura do texto {{ post.data.title }}">Continuar leitura...</a>
     </p>
 
     <p>

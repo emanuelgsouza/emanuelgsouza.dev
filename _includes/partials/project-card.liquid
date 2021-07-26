@@ -1,19 +1,19 @@
 <div class="card">
-  <a href="{{ project.url }}" class="card-image" title="Conheça o projeto {{ project.name }}">
+  <a href="{{ project.url.url }}" class="card-image" title="Conheça o projeto {{ project.title }}">
     <figure class="image">
-      <img src="/images/projects/{{ project.image }}" alt="">
+      <img src="{{ project.image.filename }}" alt="">
     </figure>
   </a>
 
   <div class="card-content">
-    {% include partials/tags, tags: project.tags %}
+    {% include partials/tags, tags: tags %}
 
-    <p class="title is-4"> {{ project.name }} </p>
+    <p class="title is-4"> {{ project.title }} </p>
 
     <div class="buttons">
-      {% if project.repository %}
+      {% if project.repository.url %}
         <a
-          href="{{project.repository}}"
+          href="{{project.repository.url}}"
           target="_blank"
           rel="noreferrer"
           class="button is-small"
@@ -22,9 +22,9 @@
         </a>
       {% endif %}
 
-      {% if project.url %}
+      {% if project.url.url %}
       <a
-        href="{{project.url}}"
+        href="{{project.url.url}}"
         target="_blank"
         rel="noreferrer"
         class="button is-small"

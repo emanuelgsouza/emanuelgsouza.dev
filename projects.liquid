@@ -8,5 +8,12 @@ eleventyExcludeFromCollections: true
 <section class="section">
   {% include partials/title, tag: 1, title: "Meus projetos" %}
 
-  {% include partials/project-card-grid, projects: projects.ptBr %}
+  {% assign projectsData = storyblok | storyblokProjects %}
+  <div class="columns is-multiline">
+    {% for project in projectsData %}
+      <div class="column is-half">
+        {% include partials/project-card, project: project.data, tags: project.tag_list %}
+      </div>
+    {% endfor %}
+  </div>
 </section>

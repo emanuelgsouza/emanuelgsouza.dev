@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   // copy files
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("static");
 
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/css/**/*.css'

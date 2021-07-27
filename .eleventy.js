@@ -4,6 +4,8 @@ require('dotenv').config()
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
+
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const env = require('./_data/env')
@@ -51,6 +53,8 @@ module.exports = function (eleventyConfig) {
     },
   });
 
+  eleventyConfig.addPlugin(tinyCSS);
+
   eleventyConfig.addFilter("readingTime", text => {
     // credits: https://ishambuilds.tech/posts/2020-05-19-building-a-reading-time-indicator-with-eleventy/
     // get entire post content element
@@ -64,6 +68,10 @@ module.exports = function (eleventyConfig) {
       //round to nearest minute
       return Math.round(timeInMinutes);
     }
+  })
+
+  eleventyConfig.addFilter("concatUrl", (partUrl) => {
+    return `${env.baseUrl}/${partUrl}`
   })
 
   eleventyConfig.addFilter("homeStory", (storyblokData = []) => {

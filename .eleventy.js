@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter("concatUrl", (partUrl) => {
-    return `${env.baseUrl}/${partUrl}`
+    return `${env.baseUrl}${partUrl}`
   })
 
   eleventyConfig.addFilter("homeStory", (storyblokData = []) => {

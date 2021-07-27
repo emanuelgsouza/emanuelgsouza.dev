@@ -2,7 +2,7 @@ require('dotenv').config()
 
 // plugins
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const codeStyleHooks = require('eleventy-plugin-code-style-hooks');
 
 const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
 
@@ -60,7 +60,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // plugins
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(codeStyleHooks, {
+    lineNumbers: false,
+  });
 
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {

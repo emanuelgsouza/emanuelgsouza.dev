@@ -1,4 +1,4 @@
-{% assign postURL = post.full_slug %}
+{% assign postURL = post.full_slug | concatUrl %}
 <div class="post-card card">
   <a href="{{ postURL }}" class="card-image" title="Confira o post '{{ post.data.title }}'">
     <figure class="image">

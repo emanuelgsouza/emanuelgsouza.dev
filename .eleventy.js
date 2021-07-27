@@ -15,6 +15,21 @@ dayjs.extend(utc)
 
 const resolver = new RichTextResolver()
 
+resolver.addNode('code_block', (node) => {
+  return {
+    tag: [
+      {
+        tag: 'pre',
+        attrs: node.attrs
+      },
+      {
+        tag: 'code',
+        attrs: node.attrs
+      },
+    ]
+  }
+})
+
 module.exports = function (eleventyConfig) {
   // copy files
   eleventyConfig.addPassthroughCopy("images");

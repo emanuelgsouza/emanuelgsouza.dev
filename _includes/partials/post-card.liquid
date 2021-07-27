@@ -7,7 +7,7 @@
   </a>
 
   <div class="card-content">
-    {% include partials/tags, tags: post.tag_list, asLink: true, max: 2 %}
+    {% include partials/tags, tags: post.tag_list, max: 2 %}
 
     <p class="title is-4">
       <a class="has-text-black" href="{{ postURL }}" title="Confira o post '{{ post.data.title }}'">

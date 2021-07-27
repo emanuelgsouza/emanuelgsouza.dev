@@ -18,7 +18,7 @@ eleventyComputed:
     </figure>
 
     <div class="blog-post__headline">
-      {% include partials/tags.liquid, tags: post.tag_list, asLink: true %}
+      {% include partials/tags.liquid, tags: post.tag_list %}
 
       {% include partials/title.liquid, tag: 1, title: post.content.title %}
 

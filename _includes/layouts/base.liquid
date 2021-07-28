@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} | {{ metadata.title }}</title>
+  <title>{{ title }} | {{ env.siteName }}</title>
   <link rel="stylesheet" href="{{ '/css/styles.css' url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/brands.css" integrity="sha384-V5Z1KgRRJyY878qCx7+zUeTDm0FgjoYrbmSortFqRPGz+Ue6XDe4uIiMqB3tB/wd" crossorigin="anonymous">
@@ -33,18 +33,20 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ banner | getFullSlugFromBanner }}">
 
-  <!-- Set up Google Analytics -->
-  <script async 
-    src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', '{{ env.tracking.gtag }}');
-  </script>
+  {% if env.tracking.gtag %}
+    <!-- Set up Google Analytics -->
+    <script async 
+      src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', '{{ env.tracking.gtag }}');
+    </script>
+  {% endif %}
 </head>
 
 <body>
@@ -56,6 +58,27 @@
 
   {% include partials/footer %}
 
-  <script src="{{ '/js/index.js' url }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const { target } = el.dataset;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>

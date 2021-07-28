@@ -1,14 +1,40 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+require('dotenv').config()
+
+// plugins
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
+const codeStyleHooks = require('eleventy-plugin-code-style-hooks');
+
+const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
+
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const env = require('./_data/env')
+const RichTextResolver = require('storyblok-js-client/dist/rich-text-resolver.cjs')
 
 dayjs.extend(utc)
+
+const resolver = new RichTextResolver()
+
+resolver.addNode('code_block', (node) => {
+  return {
+    tag: [
+      {
+        tag: 'pre',
+        attrs: node.attrs
+      },
+      {
+        tag: 'code',
+        attrs: node.attrs
+      },
+    ]
+  }
+})
 
 module.exports = function (eleventyConfig) {
   // copy files
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("static");
 
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/css/**/*.css'
@@ -21,9 +47,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getBannerSource", bannerFile => {
     return `/images/posts/${bannerFile}`;
   });
+  // TODO: refactor this to use the Image Service
   eleventyConfig.addFilter("getFullSlugFromBanner", bannerFile => {
     if (bannerFile) {
-      return `${env.baseUrl}/images/posts/${bannerFile}`;
+      return bannerFile;
     }
 
     return `${env.baseUrl}/images/cover.jpg`;
@@ -33,7 +60,17 @@ module.exports = function (eleventyConfig) {
   });
 
   // plugins
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(codeStyleHooks, {
+    lineNumbers: false,
+  });
+
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: process.env.HOST_NAME,
+    },
+  });
+
+  eleventyConfig.addPlugin(tinyCSS);
 
   eleventyConfig.addFilter("readingTime", text => {
     // credits: https://ishambuilds.tech/posts/2020-05-19-building-a-reading-time-indicator-with-eleventy/
@@ -48,5 +85,29 @@ module.exports = function (eleventyConfig) {
       //round to nearest minute
       return Math.round(timeInMinutes);
     }
+  })
+
+  eleventyConfig.addFilter("concatUrl", (partUrl) => {
+    return `${env.baseUrl}${partUrl}`
+  })
+
+  eleventyConfig.addFilter("homeStory", (storyblokData = []) => {
+    return storyblokData.find(storyItem => storyItem.full_slug === 'home')
+  })
+
+  eleventyConfig.addFilter("lastPosts", (storyblokData = []) => {
+    return storyblokData.filter(storyItem => storyItem.full_slug.indexOf('posts/') !== -1)
+  })
+
+  eleventyConfig.addFilter("storyblokPosts", (storyblokData = []) => {
+    return storyblokData.filter(storyItem => storyItem.full_slug.indexOf('posts/') !== -1)
+  })
+
+  eleventyConfig.addFilter("storyblokProjects", (storyblokData = []) => {
+    return storyblokData.filter(storyItem => storyItem.full_slug.indexOf('projects/') !== -1)
+  })
+
+  eleventyConfig.addFilter('resolveRichtext', (content = {}) => {
+    return resolver.render(content)
   })
 };

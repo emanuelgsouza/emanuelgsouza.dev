@@ -5,31 +5,30 @@ permalink: /
 eleventyExcludeFromCollections: true
 ---
 
+{% assign home = storyblok | homeStory %}
+
 <main class="index-page">
   <section class="section">
-  {% include partials/profile %}
+  <img
+    class="profile-image"
+    src="{{ home.data.profile.filename }}"
+    alt="Foto de perfil de Emanuel Gonçalves"
+    width="250"
+    height="250"
+  />
 
     <div class="description">
       <p>
-        Prazer, sou Emanuel Gonçalves, casado, cristão e Engenheiro Front End. Sou entusiasta de Tecnologias Web, Acessibilidade e Web Semântica. Atualmente trabalho como Desenvolvedor Front End na Storyblok. Eu reconheço o papel do Open Source e das comunidades de desenvolvimento, e sempre que possível, procuro participar delas. Meu lema é um ditado africano que diz: 'To go fast, go alone; to go far, go together' ('Se quer ir rápido, vá sozinho; para ir longe, vá junto').
+        {{ home.data.about }}
       </p>
     </div>
-  </section>
-
-  <section class="section">
-    {% include partials/title, tag: 2, title: "Alguns dos meus projetos" %}
-
-    {% assign projectsToUse = projects.ptBr | slice: 0, 4 %}
-    {% include partials/project-card-grid, projects: projectsToUse %}
-
-    <a href="/projects" title="Conheça todos os meus projetos" class="button is-primary is-outlined"> Ver todos os projetos </a>
   </section>
 
   <section class="section">
     {% include partials/title, tag: 2, title: "Últimos blog posts" %}
     
     <div class="columns is-multiline">
-      {% assign postsToShow = collections.posts | slice: 0, 4 %}
+      {% assign postsToShow = storyblok | lastPosts | slice: 0, 4 %}
       {% for post in postsToShow %}
         <div class="column is-half">
           {% include partials/post-card, post: post %}
@@ -38,5 +37,19 @@ eleventyExcludeFromCollections: true
     </div>
 
     <a href="/posts" class="button is-primary is-outlined"> Confira meus blog posts </a>
+  </section>
+
+  <section class="section">
+    {% include partials/title, tag: 2, title: "Alguns dos meus projetos" %}
+
+    <div class="columns is-multiline">
+      {% for project in home.data.projects %}
+        <div class="column is-half">
+          {% include partials/project-card, project: project.content, tags: project.tag_list %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <a href="/projects" title="Conheça todos os meus projetos" class="button is-primary is-outlined"> Ver todos os projetos </a>
   </section>
 </main>

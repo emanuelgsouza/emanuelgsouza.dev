@@ -1,6 +1,7 @@
 @import './variables';
 
-.content a {
+.content a,
+.link {
   border-bottom: 1px dashed $primary;
 }
 

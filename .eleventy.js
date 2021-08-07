@@ -7,11 +7,13 @@ const codeStyleHooks = require('eleventy-plugin-code-style-hooks');
 const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
 
 const dayjs = require('dayjs')
+require('dayjs/locale/pt-br')
 const utc = require('dayjs/plugin/utc')
 const env = require('./src/_data/env')
 const RichTextResolver = require('storyblok-js-client/dist/rich-text-resolver.cjs');
 const readableTimeToRead = require('./config/filters/readable-time-to-read');
 
+dayjs.locale('pt-br')
 dayjs.extend(utc)
 
 const resolver = new RichTextResolver()

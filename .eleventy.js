@@ -42,7 +42,7 @@ module.exports = function (eleventyConfig) {
 
   // filters
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return dayjs(dateObj).utc().format("MMM, DD YYYY");
+    return dayjs(dateObj || undefined).utc().format("MMM, DD YYYY");
   });
   eleventyConfig.addFilter("getBannerSource", bannerFile => {
     return `/images/posts/${bannerFile}`;

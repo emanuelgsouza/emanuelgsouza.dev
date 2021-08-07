@@ -9,7 +9,8 @@ const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const env = require('./_data/env')
-const RichTextResolver = require('storyblok-js-client/dist/rich-text-resolver.cjs')
+const RichTextResolver = require('storyblok-js-client/dist/rich-text-resolver.cjs');
+const readableTimeToRead = require('./config/filters/readable-time-to-read');
 
 dayjs.extend(utc)
 
@@ -58,6 +59,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getDescription", (description) => {
     return description || env.description;
   });
+  eleventyConfig.addFilter("readableTimeToRead", readableTimeToRead);
 
   // plugins
   eleventyConfig.addPlugin(codeStyleHooks, {

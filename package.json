@@ -28,7 +28,7 @@
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "watch:sass": "npx sass src/sass:_site/css --watch",
     "build:css": "npx sass src/sass:_site/css",
-    "start": "yarn serve & yarn watch:sass",
+    "start": "yarn clean && yarn serve & yarn watch:sass",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "lint:styles": "npx stylelint '**/*.scss'",
     "build": "yarn clean && yarn build:css && ELEVENTY_ENV=prod npx eleventy",

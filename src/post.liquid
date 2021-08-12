@@ -6,23 +6,23 @@ pagination:
 permalink: "{{ post.full_slug }}/"
 layout: layouts/base.liquid
 eleventyComputed:
-  title: "{{ post.content.title }}"
-  description: "{{ post.content.description }}"
-  banner: "{{ post.content.banner.filename }}"
+  title: "{{ post.data.title }}"
+  description: "{{ post.data.description }}"
+  banner: "{{ post.data.banner.filename }}"
 ---
 
-{% assign content = post.content.content | resolveRichtext %}
+{% assign content = post.data.content | resolveRichtext %}
 
 <section class="section">
   <header class="blog-post__header">
     <figure class="image mb-4">
-      <img src="{{ post.content.banner.filename }}" alt="{{ post.content.banner.alt }}">
+      <img src="{{ post.data.banner.filename }}" alt="{{ post.data.banner.alt }}">
     </figure>
 
     <div class="blog-post__headline">
       {% include partials/tags.liquid, tags: post.tag_list %}
 
-      {% include partials/title.liquid, tag: 1, title: post.content.title %}
+      {% include partials/title.liquid, tag: 1, title: post.data.title %}
 
       <p>
         Publicado em {{ post.published_at | readableDate }} - {{ content | readableTimeToRead }}

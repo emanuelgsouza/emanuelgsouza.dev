@@ -56,7 +56,7 @@ module.exports = function (eleventyConfig) {
       return bannerFile;
     }
 
-    return `${env.baseUrl}/images/cover.jpg`;
+    return `${env.baseUrl}images/cover.jpeg`;
   });
   eleventyConfig.addFilter("getDescription", (description) => {
     return description || env.description;

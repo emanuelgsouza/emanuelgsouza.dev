@@ -19,7 +19,7 @@ module.exports = async () => {
     const posts = await storyblokClient.getAll('cdn/stories', {
       starts_with: 'posts',
       version: process.env.STORYBLOK_VERSION,
-      sort_by: 'first_published_at:desc',
+      sort_by: 'published_at:desc',
     });
 
     return Promise.resolve(transformPosts(posts));

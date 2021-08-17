@@ -28,7 +28,7 @@ eleventyExcludeFromCollections: true
     {% include partials/title, tag: 2, title: "Últimos blog posts" %}
     
     <div class="columns is-multiline">
-      {% assign postsToShow = storyblok | lastPosts | slice: 0, 4 %}
+      {% assign postsToShow = posts | slice: 0, 4 %}
       {% for post in postsToShow %}
         <div class="column is-half">
           {% include partials/post-card, post: post %}

@@ -30,21 +30,6 @@
   <meta name="twitter:creator" content="@emanuelgsouza">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ banner | getFullSlugFromBanner }}">
-
-  {% if env.tracking.gtag %}
-    <!-- Set up Google Analytics -->
-    <script async 
-      src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', '{{ env.tracking.gtag }}');
-    </script>
-  {% endif %}
 </head>
 
 <body>
@@ -78,5 +63,20 @@
       }
     });
   </script>
+
+  {% if env.tracking.gtag %}
+  <!-- Set up Google Analytics -->
+  <script async 
+    src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', '{{ env.tracking.gtag }}');
+  </script>
+  {% endif %}
 </body>
 </html>

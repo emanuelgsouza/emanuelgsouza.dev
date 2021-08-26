@@ -4,6 +4,7 @@ require('dotenv').config()
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const codeStyleHooks = require('eleventy-plugin-code-style-hooks');
 
+const tinyHTML = require('@sardine/eleventy-plugin-tinyhtml');
 const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
 
 const dayjs = require('dayjs')
@@ -75,6 +76,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(tinyCSS);
+
+  eleventyConfig.addPlugin(tinyHTML);
 
   eleventyConfig.addFilter("readingTime", text => {
     // credits: https://ishambuilds.tech/posts/2020-05-19-building-a-reading-time-indicator-with-eleventy/

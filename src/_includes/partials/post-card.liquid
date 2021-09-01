@@ -1,11 +1,5 @@
 {% assign postURL = post.full_slug | concatUrl %}
 <div class="post-card card">
-  <a href="{{ postURL }}" class="card-image" title="Confira o post '{{ post.data.title }}'">
-    <figure class="image">
-      <img src="{{ post.data.banner.filename }}"  width="400" height="200" alt="">
-    </figure>
-  </a>
-
   <div class="card-content">
     {% include partials/tags, tags: post.tag_list, max: 2 %}
 

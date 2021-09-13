@@ -12,7 +12,7 @@ require('dayjs/locale/pt-br')
 const utc = require('dayjs/plugin/utc')
 const env = require('./src/_data/env')
 const RichTextResolver = require('storyblok-js-client/dist/rich-text-resolver.cjs');
-const readableTimeToRead = require('./config/filters/readable-time-to-read');
+const { installFilters } = require('./config/filters')
 
 dayjs.locale('pt-br')
 dayjs.extend(utc)
@@ -73,6 +73,8 @@ module.exports = function (eleventyConfig) {
   });
 
   // filters
+  installFilters(eleventyConfig);
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return dayjs(dateObj || undefined).utc().format("MMM, DD YYYY");
   });
@@ -90,7 +92,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("getDescription", (description) => {
     return description || env.description;
   });
-  eleventyConfig.addFilter("readableTimeToRead", readableTimeToRead);
 
   // plugins
   eleventyConfig.addPlugin(codeStyleHooks, {
@@ -106,21 +107,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(tinyCSS);
 
   eleventyConfig.addPlugin(tinyHTML);
-
-  eleventyConfig.addFilter("readingTime", text => {
-    // credits: https://ishambuilds.tech/posts/2020-05-19-building-a-reading-time-indicator-with-eleventy/
-    // get entire post content element
-    let wordCount = `${text}`.match(/\b[-?(\w+)?]+\b/gi).length;
-    //calculate time in munites based on average reading time
-    let timeInMinutes = (wordCount / 225)
-    //validation as we don't want it to show 0 if time is under 30 seconds
-    if(timeInMinutes <= 0.5) {
-      return 1;
-    } else {
-      //round to nearest minute
-      return Math.round(timeInMinutes);
-    }
-  })
 
   eleventyConfig.addFilter("concatUrl", (partUrl) => {
     return `${env.baseUrl}${partUrl}`

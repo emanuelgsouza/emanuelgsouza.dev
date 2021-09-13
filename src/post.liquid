@@ -27,6 +27,14 @@ eleventyComputed:
       <p>
         Publicado em {{ post.published_at | readableDate }} - {{ content | readableTimeToRead }}
       </p>
+
+      {% if post.data.original_post != '' and post.data.original_post.url != '' %}
+        <p>
+          Texto originalmente publicado em <a href="{{ post.data.original_post.url }}" rel="noreferrer noopener">
+            {{ post.data.original_post.url | getHostnameFromUrl }}
+          </a>
+        </p>
+      {% endif %}
     </div>
   </header>
 

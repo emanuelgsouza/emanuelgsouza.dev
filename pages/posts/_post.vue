@@ -88,6 +88,12 @@ export default {
     post: { content: {} },
   }),
 
+  head() {
+    return {
+      title: `${this.contentPost.title} | Emanuel Gonçalves - Web Software Developer`,
+    }
+  },
+
   computed: {
     contentPost() {
       return this.post.content || {}

@@ -67,6 +67,12 @@ export default {
     lastPosts: [],
   }),
 
+  head() {
+    return {
+      title: `Home | Emanuel Gonçalves - Web Software Developer`,
+    }
+  },
+
   mounted() {
     this.$storybridge(() => {
       const storyblokInstance = new window.StoryblokBridge()

@@ -31,9 +31,9 @@
         </div>
       </div>
 
-      <a href="/posts" class="button is-primary is-outlined">
+      <router-link to="/posts" class="button is-primary is-outlined">
         Confira meus blog posts
-      </a>
+      </router-link>
     </section>
 
     <section class="section">
@@ -51,13 +51,13 @@
         </div>
       </div>
 
-      <a
-        href="/projects"
+      <router-link
+        to="/projects"
         title="Conheça todos os meus projetos"
         class="button is-primary is-outlined"
       >
         Ver todos os projetos
-      </a>
+      </router-link>
     </section>
   </main>
 </template>

@@ -4,9 +4,13 @@
       <AppTags :tags="post.tag_list" :max="2" />
 
       <p class="title is-4">
-        <a class="has-text-black" :href="post.full_slug" :title="computedTitle">
+        <router-link
+          class="has-text-black"
+          :to="`posts/${post.slug}`"
+          :title="computedTitle"
+        >
           {{ post.content.title }}
-        </a>
+        </router-link>
       </p>
 
       <p class="mb-4">

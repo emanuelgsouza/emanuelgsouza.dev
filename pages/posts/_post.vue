@@ -5,8 +5,8 @@
         <img
           width="800"
           height="450"
-          :src="contentPost.banner.filename"
-          :alt="contentPost.banner.alt"
+          :src="postBanner.filename"
+          :alt="postBanner.alt"
         />
       </figure>
 
@@ -17,10 +17,7 @@
           {{ contentPost.title }}
         </AppTitle>
 
-        <p>
-          Publicado em {{ computedDate }} -
-          <!-- {{ content | readableTimeToRead }} -->
-        </p>
+        <p>Publicado em {{ computedDate }}</p>
 
         <p v-if="hasOriginalPost">
           Texto originalmente publicado em
@@ -56,6 +53,14 @@ const getSingleStory = (context) => {
 
 export default {
   async asyncData(context) {
+    const { payload } = context
+
+    if (payload) {
+      return {
+        post: payload,
+      }
+    }
+
     try {
       const post = await getSingleStory(context)
 
@@ -105,6 +110,10 @@ export default {
 
       return resolver.render(this.contentPost.content)
     },
+
+    postBanner() {
+      return this.contentPost.banner || {}
+    },
   },
 
   mounted() {
@@ -114,7 +123,7 @@ export default {
       // Use the input event for instant update of content
       storyblokInstance.on('input', (event) => {
         if (event.story.id === this.story.id) {
-          this.story.content = event.story.content
+          this.post.content = event.story.content
         }
       })
 

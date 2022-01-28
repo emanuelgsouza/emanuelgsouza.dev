@@ -2,19 +2,19 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container is-max-desktop">
       <div class="navbar-brand">
-        <a
+        <router-link
           class="navbar-item"
-          href="/"
+          to="/"
           title="Navegar para a Home Page do site"
         >
           @emanuelgsouza
-        </a>
+        </router-link>
 
         <a
           role="button"
           class="navbar-burger"
           aria-label="menu"
-          aria-expanded="false"
+          :aria-expanded="isMenuOpen"
           @click="handleOpenMenu"
         >
           <span aria-hidden="true"></span>
@@ -25,9 +25,11 @@
 
       <div class="navbar-menu" :class="{ 'is-active': isMenuOpen }">
         <div class="navbar-start">
-          <a class="navbar-item" href="/posts"> Blog </a>
+          <router-link class="navbar-item" to="/posts"> Blog </router-link>
 
-          <a class="navbar-item" href="/projects"> Projetos </a>
+          <router-link class="navbar-item" to="/projects">
+            Projetos
+          </router-link>
         </div>
 
         <ul class="navbar-end">

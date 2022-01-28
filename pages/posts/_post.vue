@@ -17,7 +17,7 @@
           {{ contentPost.title }}
         </AppTitle>
 
-        <p>Publicado em {{ computedDate }}</p>
+        <p>Publicado em {{ computedDate }} - {{ computedTimeToRead }}</p>
 
         <p v-if="hasOriginalPost">
           Texto originalmente publicado em
@@ -36,7 +36,7 @@
 
 <script>
 import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.es'
-import { readableDate } from '~/utils/time'
+import { readableDate, timeToRead } from '~/utils/time'
 import Prism from '~/plugins/prism'
 
 const getSingleStory = (context) => {
@@ -119,6 +119,10 @@ export default {
 
     postBanner() {
       return this.contentPost.banner || {}
+    },
+
+    computedTimeToRead() {
+      return timeToRead(this.contentData)
     },
   },
 

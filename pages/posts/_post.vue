@@ -58,7 +58,6 @@ export default {
   async asyncData(context) {
     try {
       const post = await getSingleStory(context)
-      console.log(post)
 
       return {
         post,

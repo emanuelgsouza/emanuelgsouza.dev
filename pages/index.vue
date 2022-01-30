@@ -10,9 +10,12 @@
 
 <script>
 const getHomeStory = (context) => {
+  const version =
+    context.query._storyblok || context.isDev ? 'draft' : 'published'
+
   return context.app.$storyapi
     .get('cdn/stories/home', {
-      version: 'draft',
+      version,
       resolve_relations: ['home.projects'],
     })
     .then((res) => res.data.story)
@@ -30,12 +33,6 @@ const getLastPosts = (context) => {
 
 export default {
   async asyncData(context) {
-    // // This what would we do in real project
-    // const version = context.query._storyblok || context.isDev ? 'draft' : 'published'
-    // const fullSlug = (context.route.path == '/' || context.route.path == '') ? 'home' : context.route.path
-
-    // Load the JSON from the API - loadig the home content (index page)
-
     try {
       const homeStory = await getHomeStory(context)
       const lastPosts = await getLastPosts(context)
@@ -75,7 +72,9 @@ export default {
 
   mounted() {
     this.$storybridge(() => {
-      const storyblokInstance = new window.StoryblokBridge()
+      const storyblokInstance = new window.StoryblokBridge({
+        resolveRelations: ['home.projects'],
+      })
 
       // Use the input event for instant update of content
       storyblokInstance.on('input', (event) => {

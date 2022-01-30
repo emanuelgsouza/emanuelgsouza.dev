@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section v-editable="post.content" class="section">
     <header class="blog-post__header">
       <figure class="image mb-4">
         <img
@@ -132,7 +132,7 @@ export default {
 
       // Use the input event for instant update of content
       storyblokInstance.on('input', (event) => {
-        if (event.story.id === this.story.id) {
+        if (event.story.id === this.post.id) {
           this.post.content = event.story.content
         }
       })

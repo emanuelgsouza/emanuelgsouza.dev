@@ -75,6 +75,7 @@ export default {
   build: {},
 
   generate: {
+    crawler: false,
     routes() {
       return getAllPosts().then((posts) => {
         return posts.map((post) => {

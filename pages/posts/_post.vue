@@ -11,6 +11,7 @@
 <script>
 import { useStoryblokBridge } from '@storyblok/nuxt'
 import Prism from '~/plugins/prism'
+import getMetatags from '~/utils/get-metatags'
 
 const getSingleStory = (context) => {
   const { params } = context
@@ -62,8 +63,15 @@ export default {
   }),
 
   head() {
+    const title = `${this.post.name} | Emanuel Gonçalves - Web Software Developer`
+
     return {
-      title: `${this.post.name} | Emanuel Gonçalves - Web Software Developer`,
+      title,
+      meta: getMetatags({
+        title,
+        description: this.contentPost.description,
+        bannerUrl: this.getBannerUrl(),
+      }),
     }
   },
 
@@ -77,6 +85,17 @@ export default {
     useStoryblokBridge(this.post.id, (newStory) => (this.post = newStory))
 
     Prism.highlightAll()
+  },
+
+  methods: {
+    getBannerUrl() {
+      const content = this.post.content || {}
+      const header = content.body.find((component) => {
+        return component.component === 'post-header'
+      })
+
+      return header?.banner.filename
+    },
   },
 }
 </script>

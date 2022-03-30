@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import getMetatags from '~/utils/get-metatags'
 const getPosts = (context) => {
   const version =
     context.query._storyblok || context.isDev ? 'draft' : 'published'
@@ -53,8 +54,16 @@ export default {
   }),
 
   head() {
+    const title = `Blog posts | Emanuel Gonçalves - Web Software Developer`
+
     return {
-      title: `Blog posts | Emanuel Gonçalves - Web Software Developer`,
+      title,
+      meta: getMetatags({
+        title,
+        description:
+          'Meu blog pessoal, local em que compartilho um pouco do meu aprendizado, meus projetos e meus pensamentos',
+        bannerUrl: 'https://emanuelgsouza.dev/cover.jpeg',
+      }),
     }
   },
 }

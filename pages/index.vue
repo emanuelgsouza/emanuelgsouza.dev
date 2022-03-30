@@ -10,6 +10,7 @@
 
 <script>
 import { useStoryblokBridge } from '@storyblok/nuxt'
+import getMetatags from '~/utils/get-metatags'
 
 const getHomeStory = (context) => {
   const version =
@@ -67,8 +68,16 @@ export default {
   }),
 
   head() {
+    const title = `Home | Emanuel Gonçalves - Web Software Developer`
+
     return {
-      title: `Home | Emanuel Gonçalves - Web Software Developer`,
+      title,
+      meta: getMetatags({
+        title,
+        description:
+          'Meu blog pessoal, local em que compartilho um pouco do meu aprendizado, meus projetos e meus pensamentos',
+        bannerUrl: 'https://emanuelgsouza.dev/cover.jpeg',
+      }),
     }
   },
 

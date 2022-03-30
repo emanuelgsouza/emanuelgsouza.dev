@@ -90,7 +90,7 @@ export default {
   methods: {
     getBannerUrl() {
       const content = this.post.content || {}
-      const header = content.body.find((component) => {
+      const header = content?.body?.find((component) => {
         return component.component === 'post-header'
       })
 

@@ -1,3 +1,4 @@
 import Prism from 'prismjs'
-import 'prismjs/themes/prism-tomorrow.css' // You can add other themes if you want
+import 'assets/scss/prism-theme.scss'
+
 export default Prism

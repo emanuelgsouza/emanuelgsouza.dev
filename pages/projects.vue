@@ -57,27 +57,5 @@ export default {
       title: `Projetos | Emanuel Gonçalves - Web Software Developer`,
     }
   },
-
-  mounted() {
-    this.$storybridge(() => {
-      const storyblokInstance = new window.StoryblokBridge()
-
-      // Use the input event for instant update of content
-      storyblokInstance.on('input', (event) => {
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content
-        }
-      })
-
-      // Use the bridge to listen the events
-      storyblokInstance.on(['published', 'change'], (event) => {
-        // window.location.reload()
-        this.$nuxt.$router.go({
-          path: this.$nuxt.$router.currentRoute,
-          force: true,
-        })
-      })
-    })
-  },
 }
 </script>

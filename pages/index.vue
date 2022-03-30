@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import { useStoryblokBridge } from '@storyblok/nuxt'
+
 const getHomeStory = (context) => {
   const version =
     context.query._storyblok || context.isDev ? 'draft' : 'published'
@@ -16,7 +18,7 @@ const getHomeStory = (context) => {
   return context.app.$storyapi
     .get('cdn/stories/home', {
       version,
-      resolve_relations: ['home.projects'],
+      resolve_relations: ['home-projects.links'],
     })
     .then((res) => res.data.story)
 }
@@ -71,27 +73,7 @@ export default {
   },
 
   mounted() {
-    this.$storybridge(() => {
-      const storyblokInstance = new window.StoryblokBridge({
-        resolveRelations: ['home.projects'],
-      })
-
-      // Use the input event for instant update of content
-      storyblokInstance.on('input', (event) => {
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content
-        }
-      })
-
-      // Use the bridge to listen the events
-      storyblokInstance.on(['published', 'change'], (event) => {
-        // window.location.reload()
-        this.$nuxt.$router.go({
-          path: this.$nuxt.$router.currentRoute,
-          force: true,
-        })
-      })
-    })
+    useStoryblokBridge(this.story.id, (newStory) => (this.story = newStory))
   },
 }
 </script>

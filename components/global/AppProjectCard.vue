@@ -1,6 +1,12 @@
 <template>
   <div class="card">
-    <a :href="project.url.url" class="card-image" :title="computedLinkTitle">
+    <a
+      :href="project.url.url"
+      class="card-image"
+      :title="computedLinkTitle"
+      rel="noreferrer"
+      target="_blank"
+    >
       <figure class="image">
         <img :src="project.image.filename" width="400" height="200" alt="" />
       </figure>

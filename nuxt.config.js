@@ -2,11 +2,13 @@ import { getAllPosts } from './utils/storyblok-data'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Emanuel Gonçalves - Front End Developer',
+    description:
+      'Meu blog pessoal, local em que compartilho um pouco do meu aprendizado, meus projetos e meus pensamentos',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +36,7 @@ export default {
   css: ['~/assets/scss/styles.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/components', '~/plugins/prism'],
+  plugins: ['~/plugins/components', { src: '~/plugins/prism', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -45,25 +47,27 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    [
+      '@storyblok/nuxt/module',
+      {
+        accessToken: process.env.STORYBLOK_API_TOKEN,
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-
-    [
-      '@storyblok/nuxt',
-      {
-        accessToken: 'SFz62rmD0ZrOfZqDVrCgCgtt',
-      },
-    ],
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'pt-br',
+    },
+    meta: {
+      theme_color: '#003d75',
     },
   },
 

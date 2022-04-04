@@ -1,7 +1,7 @@
 import StoryblokClient from 'storyblok-js-client'
 
 const client = new StoryblokClient({
-  accessToken: process.env.STORYBLOK_API_TOKEN,
+  accessToken: process.env.STORYBLOK_TOKEN,
 })
 
 export const getAllPosts = () => {

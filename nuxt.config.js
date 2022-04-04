@@ -50,9 +50,10 @@ export default {
     [
       '@storyblok/nuxt/module',
       {
-        accessToken: process.env.STORYBLOK_API_TOKEN,
+        accessToken: process.env.STORYBLOK_TOKEN,
       },
     ],
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -86,5 +87,9 @@ export default {
         })
       })
     },
+  },
+
+  googleAnalytics: {
+    id: process.env.GA,
   },
 }

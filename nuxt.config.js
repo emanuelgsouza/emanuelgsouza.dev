@@ -36,7 +36,7 @@ export default {
   css: ['~/assets/scss/styles.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/components', { src: '~/plugins/prism', mode: 'client' }],
+  plugins: ['~/plugins/components', '~/plugins/prism'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

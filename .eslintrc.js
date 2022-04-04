@@ -1,17 +1,28 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    commonjs: true,
-    es2021: true,
     node: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
   parserOptions: {
-    ecmaVersion: 12,
+    parser: '@babel/eslint-parser',
+    requireConfigFile: false,
   },
+  extends: [
+    '@nuxtjs',
+    'plugin:nuxt/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
+  ],
+  plugins: [],
+  // add your custom rules here
   rules: {
-    'import/no-extraneous-dependencies': 'off',
+    'vue/multi-word-component-names': 'off',
+    'no-console': [
+      process.env.NODE_ENV === 'production' ? 'error' : 'off',
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
   },
-};
+}

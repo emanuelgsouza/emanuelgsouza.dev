@@ -1,0 +1,28 @@
+// my own colors
+$background-color: #fcfcfc;
+$tipography-color: #282a36;
+$white: #fff;
+
+// primary colors
+$primary: #003d75;
+$navy-blue: #000080;
+
+// updating bulma variables
+
+// general customizations
+$body-background-color: $background-color;
+$background: $background-color;
+$family-sans-serif: 'Lora', sans-serif;
+$text: $tipography-color;
+$text-strong: $tipography-color;
+$link: $primary;
+$link-hover: $navy-blue;
+
+// navbar customizations
+$navbar-background-color: $background-color;
+
+// footer customizations
+$footer-background-color: $background-color;
+$footer-padding: 3rem 1.5rem;
+
+$profile-size: 250px;

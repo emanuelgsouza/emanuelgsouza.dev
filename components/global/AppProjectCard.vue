@@ -24,6 +24,7 @@
             target="_blank"
             rel="noreferrer"
             class="button is-small"
+            :title="computedGithubTitle"
           >
             Github
           </a>
@@ -35,6 +36,7 @@
             target="_blank"
             rel="noreferrer"
             class="button is-small"
+            :title="computedLinkTitle"
           >
             Link
           </a>
@@ -63,6 +65,10 @@ export default {
   computed: {
     computedLinkTitle() {
       return `Conheça o projeto ${this.project.title}`
+    },
+
+    computedGithubTitle() {
+      return `Conheça o repositório do projeto ${this.project.title}`
     },
   },
 }

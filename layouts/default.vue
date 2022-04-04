@@ -1,9 +1,9 @@
 <template>
   <div>
     <AppHeader />
-    <div class="container is-max-desktop">
+    <main class="container is-max-desktop">
       <Nuxt />
-    </div>
+    </main>
     <AppFooter />
   </div>
 </template>

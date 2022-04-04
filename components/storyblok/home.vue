@@ -1,5 +1,5 @@
 <template>
-  <main v-editable="blok" class="index-page">
+  <section v-editable="blok" class="index-page">
     <component
       :is="item.component"
       v-for="item in blok.body"
@@ -7,7 +7,7 @@
       :blok="item"
       :last-posts="lastPosts"
     />
-  </main>
+  </section>
 </template>
 
 <script>

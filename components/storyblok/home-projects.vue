@@ -1,7 +1,7 @@
 <template>
   <section v-editable="blok" class="section">
     <div class="title-container">
-      <h2 class="title is-2">Alguns dos meus projetos</h2>
+      <h2 class="title is-2">{{ blok.title }}</h2>
     </div>
 
     <div class="columns is-multiline">

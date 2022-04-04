@@ -82,7 +82,9 @@ export default {
   },
 
   mounted() {
-    useStoryblokBridge(this.story.id, (newStory) => (this.story = newStory))
+    useStoryblokBridge(this.story.id, (newStory) => (this.story = newStory), {
+      resolveRelations: ['home-projects.links'],
+    })
   },
 }
 </script>

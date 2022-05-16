@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.es'
+import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 
 export default {
   name: 'HomeProfile',

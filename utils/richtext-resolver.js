@@ -1,4 +1,4 @@
-import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.es'
+import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 
 const resolver = new RichTextResolver()
 

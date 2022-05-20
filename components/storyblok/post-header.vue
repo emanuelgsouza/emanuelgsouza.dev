@@ -1,6 +1,6 @@
 <template>
   <header v-editable="blok" class="blog-post__header">
-    <figure class="image mb-4">
+    <figure v-if="postBanner.filename" class="image mb-4">
       <img
         width="800"
         height="450"

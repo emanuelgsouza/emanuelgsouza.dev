@@ -1,7 +1,7 @@
 export default function getMetatags(meta) {
   const { title, description, bannerUrl } = meta
 
-  return [
+  let data = [
     // description
     {
       hid: 'description',
@@ -19,11 +19,6 @@ export default function getMetatags(meta) {
       hid: 'twitter:description',
       name: 'twitter:description',
       content: description,
-    },
-    {
-      hid: 'twitter:image',
-      name: 'twitter:image',
-      content: bannerUrl,
     },
     {
       hid: 'twitter:site',
@@ -57,20 +52,33 @@ export default function getMetatags(meta) {
       name: 'og:type',
       content: 'article',
     },
-    {
-      hid: 'og:image',
-      name: 'og:image',
-      content: bannerUrl,
-    },
-    {
-      hid: 'og:image:width',
-      name: 'og:image:width',
-      content: '1000',
-    },
-    {
-      hid: 'og:image:height',
-      name: 'og:image:height',
-      content: '420',
-    },
   ]
+
+  if (bannerUrl) {
+    data = [
+      ...data,
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: bannerUrl,
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: bannerUrl,
+      },
+      {
+        hid: 'og:image:width',
+        name: 'og:image:width',
+        content: '1000',
+      },
+      {
+        hid: 'og:image:height',
+        name: 'og:image:height',
+        content: '420',
+      },
+    ]
+  }
+
+  return data
 }

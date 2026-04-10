@@ -23,7 +23,7 @@
     "@nuxtjs/composition-api": "^0.32.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@storyblok/nuxt": "^3.0.2",
-    "axios": "^0.27.2",
+    "axios": "^1.15.0",
     "bulma": "^0.9.3",
     "core-js": "^3.21.1",
     "dayjs": "^1.11.2",
